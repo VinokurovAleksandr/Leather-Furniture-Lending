@@ -8,7 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="header__banner">Limited time offer: Get 20% off</div>
+      <div class="header__banner">Limited time offer: Get 20% off</div>
+      <div class="header__container">
         <nav class="header__nav">
             <a class="header__logo" href="#">
                 <img src="./img/header/logo.svg" alt="logo">
@@ -22,17 +23,19 @@
                 <li class="header__item"><a class="header__link href="#">More</a></li>
             </ul>
         </nav>
+      </div>
+     
     </header>
     <main>
-<section class="hero" aria-labelledby="hero-title">
+<section class="hero section" aria-labelledby="hero-title">
   <div class="hero__container">
 
     <!-- top badges / social proof -->
     <div class="hero__top">
-      <p class="hero__badge">
-        <img class="hero__badge-icon" src="./img/main/star.svg" alt="" aria-hidden="true">
+      <div class="hero__badge">
+        <img class="hero__badge-icon" src="./img/main/star.svg" alt="star icon" aria-hidden="true">
         <span class="hero__badge-text">4.8 star-rated service</span>
-      </p>
+      </div>
 
       <div class="hero__social-proof" aria-label="Customer satisfaction">
         <ul class="hero__avatars" aria-hidden="true">
@@ -56,7 +59,7 @@
 
     <!-- main content -->
     <div class="hero__content">
-      <h1 class="hero__title" id="hero-title">Leather Furniture Repair in Austin </h1>
+      <h1 class="hero__title">Leather Furniture Repair in Austin </h1>
       <p class="hero__subtitle">We breathe new life into your leather goods.</p>
 
       <form class="hero__form zip-form" action="#" method="post" novalidate>
@@ -92,10 +95,11 @@
   </div>
 </section>
 
-        <section>
-            <h2>Trusted Partner to Premier Brands</h2>
-            <h3>Body text goes here</h3>
-            <div>
+<section class="partner section">
+  <div class="partner__container">
+    <h2 class="partner__title">Trusted Partner to Premier Brands</h2>
+            <h3 class="partner_subtitle">Body text goes here</h3>
+            <div class="partner__img">
                 <img src="./img/section brands/chanel.svg" alt="">
                 <img src="./img/section brands/YSL.svg" alt="">
                 <img src="./img/section brands/gucci.svg" alt="">
@@ -103,9 +107,12 @@
                 <img src="./img/section brands/Lv.svg" alt="">
 
             </div>
-        </section>
-        <section class="craft" aria-labelledby="craft-title">
-  <div class="container">
+  </div>         
+</section>
+
+<!-- craft section -->
+<section class="craft section" aria-labelledby="craft-title">
+  <div class="craft__container">
     <header class="craft__header">
       <h2 id="craft-title" class="craft__title">Our Craft in Action</h2>
       <p class="craft__lead">
@@ -270,8 +277,9 @@
 </section>
 
     </main>
-    <footer>
-        <h2>Company Name</h2>
+<footer class="section">
+  <div class="footer__container">
+  <h2>Company Name</h2>
         <div>
             <div>
                 <h5>Bio</h5>
@@ -305,7 +313,6 @@
                     <li><a href="#">Warranty & Maintenance</a></li>
                 </ul>
             </div>
->
         </div>
         <div><p>&copy; 2025 Leather Repair Studio. All Rights Reserved.</p></div>
         <div>
@@ -317,7 +324,9 @@
                 </ul>
             </nav>
         </div>
-    </footer>
+  </div>
+      
+</footer>
     
 </body>
 </html>
