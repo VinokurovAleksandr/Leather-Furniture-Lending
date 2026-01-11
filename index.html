@@ -33,27 +33,28 @@
     <!-- top badges / social proof -->
     <div class="hero__top">
       <div class="hero__badge">
-        <img class="hero__badge-icon" src="./img/main/star.svg" alt="star icon" aria-hidden="true">
+          <img class="hero__badge-icon" src="./img/main/star.svg" alt="star icon" aria-hidden="true">
         <span class="hero__badge-text">4.8 star-rated service</span>
       </div>
 
       <div class="hero__social-proof" aria-label="Customer satisfaction">
         <ul class="hero__avatars" aria-hidden="true">
           <li class="hero__avatar">
-            <img class="hero__avatar-img" src="./img/main/Ellipse 4.jpg" alt="">
+            <img class="hero__avatar-img" src="./img/main/ellopse1.png" alt="">
           </li>
           <li class="hero__avatar">
-            <img class="hero__avatar-img" src="./img/main/Ellipse 5.webp" alt="">
+            <img class="hero__avatar-img" src="./img/main/ellopse2.png" alt="">
           </li>
           <li class="hero__avatar">
-            <img class="hero__avatar-img" src="./img/main/Frame 15.webp" alt="">
+            <img class="hero__avatar-img" src="./img/main/ellopse3.jpg" alt="">
           </li>
         </ul>
 
-        <p class="hero__social-text">
+          <p class="hero__social-text">
           <strong class="hero__social-number">1500+</strong>
           <span class="hero__social-label">Satisfied customers</span>
         </p>
+
       </div>
     </div>
 
@@ -73,20 +74,29 @@
             inputmode="numeric"
             autocomplete="postal-code"
             placeholder="Enter your ZIP"
+            readonly
           />
         </label>
 
-        <button class="zip-form__btn" type="submit">CHECK YOUR AREA</button>
+        <!-- hodden file input -->
+           <input
+            class="zip-form__file"
+            type="file"
+            id="zipFile"
+            name="zipFile"
+          />
+
+        <button class="zip-form__btn" type="button">CHECK YOUR AREA</button>
       </form>
 
       <ul class="hero__perks" aria-label="Service perks">
         <li class="hero__perk">
-          <img class="hero__perk-icon" src="./img/main/delivery.svg" alt="" aria-hidden="true">
+          <img class="hero__perk-icon" src="./img/main/delivery.svg" alt="icon delivery" aria-hidden="true">
           <span class="hero__perk-text">Free pickup &amp; delivery</span>
         </li>
 
         <li class="hero__perk">
-          <img class="hero__perk-icon" src="./img/main/gifts.svg" alt="" aria-hidden="true">
+          <img class="hero__perk-icon" src="./img/main/gifts.svg" alt="icon  Save up" aria-hidden="true">
           <span class="hero__perk-text">Save up to 20% today</span>
         </li>
       </ul>
@@ -327,6 +337,6 @@
   </div>
       
 </footer>
-    
+    <script src="./input-btn.js"></script>
 </body>
 </html>

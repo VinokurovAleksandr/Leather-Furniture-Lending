@@ -42,7 +42,7 @@ body {
   font-family: 'Figtree' ;
   /* color: var(--primary-text-color); */
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.2;
   background-color: var(--main-white);
   color: var(--main-dark);
   font-weight: 400;
@@ -57,6 +57,8 @@ body {
   --accent-orange: #f07030;
   --badge-orange: rgb(253, 241, 234);
   --Secondary-Text-Grey: #747272;
+  --badge-orange: #fdf1ea;
+  --form-grey: #efefef;
 }
 
 .section{
@@ -128,59 +130,157 @@ padding: 10px 0;
 
 /* HERO SECTION */
 .hero{
-  
-}
-.hero__container{
   padding-top: 108px;
   padding-bottom: 58px;
+
+  background-image: url(./img/main/93cf9387-1fe3-473c-8e78-db36b0de368d\ 2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* min-width: 100vh; */
+}
+
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 108px;
+  padding-bottom: 58px; */
 }
 .hero__top{ 
-
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-height: 500px;
+    gap: 53px;
+    margin-bottom: 10px;
 }
 .hero__badge{
-
+    display: flex;
+    align-items: center;
 }
-.hero__badge-icon{}
+
+.hero__badge-icon{
+  padding: 9px;
+  border-radius: 50%;
+  background-color: var(--badge-orange);
+}
+
 .hero__badge-text{
   color: var(--accent-orange);
   text-transform: uppercase;
   line-height: 18px;
+  padding: 8px 10px;
+  border-radius: 50px;
+  background-color: var(--badge-orange);
 }
-.hero__social-proof{}
+.hero__social-proof{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .hero__avatars{
-
+  display: flex;
 }
-.hero__avatar{}
-.hero__avatar-img{}
-.hero__avatar{}
-.hero__avatar-img{}
-.hero__social-text{}
+.hero__avatar:not(:first-child){
+  margin-left: -17px;
+}
+
+.hero__avatar-img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  background-color: #fff;
+}
+
 .hero__social-number{
+  display: block;
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
 }
-.hero__social-label{}
+.hero__social-label{
+  font-size: 14px;
+  line-height: 1.5;
+}
 
 /* main content */
-
-.hero__content{}
+.hero__content{
+  width: 100%;
+  max-width: 500px;
+}
 .hero__title{
   font-size: 48px;
   font-weight: 600;
   line-height: 58px;
+
+  margin-bottom: 5px;
+  
 }
 .hero__subtitle{
   font-style: 18px;
   line-height: 22px;
+  color: var(--text-gray);
+
+  margin-bottom: 90px;
+  
 }
 .hero__form{}
-.zip-form__field{}
-.zip-form__input::placeholder{
-  color: var(--Secondary-Text-Grey);
-  font-size: 16px;
-  line-height: 19px;
+.zip-form{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--form-grey);
+  border-radius: 50px;
+  background-color: var(--main-white);
+  padding: 5px 5px 5px 30px;
+  gap: 3px;
+  margin-bottom: 15px;
 }
+.zip-form__field{
+  flex: 1;
+  height: 100%;
+}
+
+.zip-form__file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.zip-form__input{
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding: 10px 5px;
+}
+
+.zip-form__input::placeholder {
+  color: var(--Secondary-Text-Grey);
+}
+
+.zip-form__input[readonly] {
+  cursor: pointer;
+  background-color: transparent;
+
+}
+
+.zip-form__input:focus,
+.zip-form__input:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
 .zip-form__btn{
   text-transform: uppercase;
   text-align: center;
@@ -189,12 +289,35 @@ padding: 10px 0;
   background-color: var(--accent-orange);
   padding: 14px 30px;
   border-radius: 50px;
-
+  cursor: pointer;
 }
-.hero__perks{}
+.zip-form__btn:active,
+.zip-form__btn:hover {
+  transform: scale(0.98);
+}
+
+
+.hero__perks{
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+ 
+}
 .hero__perk{}
-.hero__perk-icon{}
-.hero__perk-text{}
-.hero__perk{}
+.hero__perk-icon{
+  padding: 7px;
+  border-radius: 50%;
+  background-color: var(--badge-orange);
+}
+.hero__perk-text{
+  font-style: 14px;
+  color: var(--text-gray);
+}
+.hero__perk{
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .hero__perk-icon{}
 .hero__perk-text{}
