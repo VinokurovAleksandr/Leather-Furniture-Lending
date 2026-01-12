@@ -227,7 +227,7 @@ padding: 10px 0;
   margin-bottom: 90px;
   
 }
-.hero__form{}
+
 .zip-form{
   display: flex;
   align-items: center;
@@ -321,3 +321,163 @@ padding: 10px 0;
 }
 .hero__perk-icon{}
 .hero__perk-text{}
+
+
+/* partner section */
+
+.partner__title{
+ font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.partner_subtitle{
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--text-gray);
+  margin-bottom: 30px;
+
+}
+.partner__img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* craft section */
+
+.craft section{}
+.craft__container{}
+.craft__header{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.craft__title{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+.craft__lead{
+  max-width: 512px;
+}
+
+.craft__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.craft-showcase{
+  position: relative;
+  /* margin-bottom: 30px; */
+}
+.craft-showcase__media{}
+.craft-showcase__badge{
+ font-size: 12px;
+  font-weight: 400;
+  color: var(--accent-orange);
+  text-transform: uppercase;
+}
+.craft-showcase__img{
+  /* position: relative; */
+  width: 100%;
+  max-width: 497px;
+  height: 518px ;
+  background-color: var(--text-gray);
+  border-radius: 10px;
+}
+
+.craft-showcase__icon{
+
+}
+.craft-showcase__wrapper{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  width: 111px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: var(--badge-orange);
+}
+
+/*  */
+.craft-showcase__content{
+    margin-top: 30px;
+}
+.craft-showcase__head{}
+.craft-showcase__title{
+  margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.craft-showcase__meta{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+}
+.craft-showcase__meta-label{
+  font-size: 20px;
+  font-weight: 600;
+}
+.craft-showcase__price{
+  font-size: 16px;
+  color: var(--text-gray);
+}
+.craft-showcase__text{
+  color: var(--text-gray);
+}
+.craft-showcase__nav{
+  position: relative;
+}
+.craft-showcase__nav-btn{}
+.craft-showcase__nav-btn{}
+
+.craft__projects-btn{
+  position: absolute;  
+  right: 50px;
+  bottom: -110px;
+  width: 120px;
+  height: 120px;
+
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--main-dark);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* .craft__projects-btn::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotate(-18deg);
+} */
+
+.craft-showcase__cta{
+  color: var(--main-white);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-21.00deg);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.craft__projects-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

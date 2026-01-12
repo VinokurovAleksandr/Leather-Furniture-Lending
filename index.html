@@ -108,56 +108,59 @@
 <section class="partner section">
   <div class="partner__container">
     <h2 class="partner__title">Trusted Partner to Premier Brands</h2>
-            <h3 class="partner_subtitle">Body text goes here</h3>
-            <div class="partner__img">
-                <img src="./img/section brands/chanel.svg" alt="">
-                <img src="./img/section brands/YSL.svg" alt="">
-                <img src="./img/section brands/gucci.svg" alt="">
-                <img src="./img/section brands/hermes.svg" alt="">
-                <img src="./img/section brands/Lv.svg" alt="">
-
-            </div>
+      <h3 class="partner_subtitle">Body text goes here</h3>
+    <div class="partner__img">
+      <img src="./img/section brands/chanel.svg" alt="">
+      <img src="./img/section brands/YSL.svg" alt="">
+      <img src="./img/section brands/gucci.svg" alt="">
+      <img src="./img/section brands/hermes.svg" alt="">
+      <img src="./img/section brands/Lv.svg" alt="">
+    </div>
   </div>         
 </section>
 
 <!-- craft section -->
 <section class="craft section" aria-labelledby="craft-title">
   <div class="craft__container">
-    <header class="craft__header">
-      <h2 id="craft-title" class="craft__title">Our Craft in Action</h2>
-      <p class="craft__lead">
+    <div class="craft__header">
+      <h2 class="craft__title">Our Craft in Action</h2>
+      <div class="craft__lead">
+        <p >
         Explore how we bring life back to every piece – see the transformation before and after our work.
       </p>
-    </header>
+      </div>
+      
+    </div>
 
     <div class="craft__grid" role="region" aria-label="Craft showcase and services">
       <!-- LEFT: showcase -->
       <article class="craft-showcase" aria-labelledby="showcase-title">
         <figure class="craft-showcase__media">
-          <span class="craft-showcase__badge" aria-label="Location">Bee Cave, TX</span>
-
-          <!-- Replace with real image -->
-          <img
-            class="craft-showcase__img"
-            src="images/work-photo.jpg"
-            alt="Photo of restored leather item before and after"
+           <div class="craft-showcase__img">
+            <img
+            src="#"
+            alt=""
             loading="lazy"
           />
-
-          <figcaption class="craft-showcase__caption">Photo of our work</figcaption>
+           </div>
+        
+           <div class="craft-showcase__wrapper">
+              <img class="craft-showcase__icon" src="./img/main/location.svg" alt="star icon" aria-hidden="true">  
+              <span class="craft-showcase__badge" aria-label="Location">Bee Cave, TX</span>
+           </div>
         </figure>
 
         <div class="craft-showcase__content">
-          <header class="craft-showcase__head">
+          <div class="craft-showcase__head">
             <h3 id="showcase-title" class="craft-showcase__title">
               Hardware Restoration Lorem ipsum poeira da ginga navidad
             </h3>
 
-            <p class="craft-showcase__meta">
+            <div class="craft-showcase__meta">
               <span class="craft-showcase__meta-label">Price</span>
               <span class="craft-showcase__price" aria-label="Price">$250</span>
-            </p>
-          </header>
+            </div>
+          </div>
 
           <div class="craft-showcase__text">
             <p>
@@ -167,7 +170,7 @@
             </p>
           </div>
 
-          <nav class="craft-showcase__nav" aria-label="Project navigation">
+          <div class="craft-showcase__nav" aria-label="Project navigation">
             <button class="craft-showcase__nav-btn" type="button" aria-label="Previous project">
               <span aria-hidden="true">‹</span>
             </button>
@@ -176,23 +179,25 @@
               <span aria-hidden="true">›</span>
             </button>
 
-            <a class="craft-showcase__cta" href="#projects">
-              See more projects
-              <span aria-hidden="true">→</span>
-            </a>
-          </nav>
+            <div class="craft__projects-btn">
+              <span class="craft-showcase__cta" href="#">
+              See more <br> projects
+            </span>
+            </div>
+         
+          </div>
         </div>
       </article>
 
       <!-- RIGHT: services -->
       <aside class="craft-services" aria-labelledby="services-title">
         <div class="craft-services__panel">
-          <header class="craft-services__header">
+          <div class="craft-services__header">
             <h3 id="services-title" class="craft-services__title">Cta lorem ipsum navidad</h3>
             <p class="craft-services__lead">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
             </p>
-          </header>
+          </div>
 
           <ul class="craft-services__list" aria-label="Services list">
             <li class="craft-services__item">
