@@ -58,7 +58,8 @@ body {
   --badge-orange: rgb(253, 241, 234);
   --Secondary-Text-Grey: #747272;
   --badge-orange: #fdf1ea;
-  --form-grey: #efefef;
+  --form-grey: rgba(239, 239, 239, 1);
+  --backgroung-grey:rgba(251, 251, 251, 1);
 }
 
 .section{
@@ -324,7 +325,9 @@ padding: 10px 0;
 
 
 /* partner section */
-
+.partner{
+  padding-bottom: 60px;
+}
 .partner__title{
  font-size: 48px;
   font-weight: 600;
@@ -345,7 +348,9 @@ padding: 10px 0;
 
 /* craft section */
 
-.craft section{}
+.craft{
+  padding-top: 60px;
+}
 .craft__container{}
 .craft__header{
   display: flex;
@@ -459,11 +464,13 @@ padding: 10px 0;
 
 /* .craft__projects-btn::after {
   content: "";
+  background-image: url(./img/main/cursor-icon.svg);
   position: absolute;
-  width: 120%;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.25);
-  transform: rotate(-18deg);
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  bottom: 0;
+  left: 80px;
 } */
 
 .craft-showcase__cta{
@@ -480,4 +487,78 @@ padding: 10px 0;
 .craft__projects-btn:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+
+/*  */
+
+.craft-services{
+  background-color: var(--backgroung-grey);
+  padding: 20px;
+  border-radius: 10px;
+}
+.craft-services__panel{}
+.craft-services__header{
+  margin-bottom: 30px;
+}
+.craft-services__title{
+  font-size: 32px;
+  font-weight: 600;
+}
+.craft-services__lead{
+  font-size: 18px;
+  color: var(--text-gray);
+}
+
+.craft-services__list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.craft-services__item{
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.service-card{
+   display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.service-card__icon{
+  width: 100px;
+  height: 100px;
+  background-color: var(--text-gray);
+  border-radius: 10px;
+}
+.service-card__body{
+  display: flex;
+  flex-direction: column;
+  width: 267px;
+}
+.service-card__title{
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+.service-card__desc{
+  font-size: 16px;
+  color: var(--text-gray);
+}
+.service-card__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--form-grey);
+  border-radius: 50%;
+  background-color: var(--main-white);
+}
+
+.service-card__link span{
+  color: var(--text-gray);
 }
