@@ -191,3 +191,157 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+
+
+
+.services {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.services__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.services__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.services__title {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.services__subtitle {
+  max-width: 420px;
+  font-size: 14px;
+  color: #666;
+}
+
+.services__nav {
+  display: flex;
+  gap: 12px;
+}
+
+.services__arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* BODY */
+.services__types {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.services__type {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #222;
+  color: #fff;
+  font-size: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.services__type--active {
+  transform: scale(1.6);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* CONTENT */
+.services__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.services__card {
+  background: #fafafa;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.services__card-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.services__card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.services__price {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.services__price-title {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.services__button {
+  padding: 14px 28px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* PREVIEW */
+.services__preview {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: #3b3f2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__preview-label {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .services__content {
+    grid-template-columns: 1fr;
+  }
+
+  .services__preview {
+    margin: 0 auto;
+  }
+}
