@@ -60,6 +60,7 @@ body {
   --badge-orange: #fdf1ea;
   --form-grey: rgba(239, 239, 239, 1);
   --backgroung-grey:rgba(251, 251, 251, 1);
+  --transition-main: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .section{
@@ -802,7 +803,7 @@ font-weight: 800;
   overflow: hidden;
 }
 .services__types img {
-width: 160px;
+    width: 160px;
     height: 160px;
     border-radius: 50%;
 }
@@ -831,4 +832,161 @@ width: 160px;
 .services__preview {
 }
 .services__preview-label {
+}
+
+/*  servises section */
+:root {
+  
+  --color-black: #111111;
+  --color-gray: #555555;
+  --bg-card: #fcfcfc;
+}
+
+/* / */
+
+
+
+.service-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.service-section__title {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.service-section__subtitle {
+  color: var(--text-gray);
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.service-section__nav-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--backgroung-grey);
+  background: var(--main-white);
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.service-section__nav-arrow--active {
+  background: var(--color-black);
+  color: var(--main-white);
+  border-color: var(--main-dark);
+}
+
+/* Позиціонування каруселі відносно картки */
+.service-section__main {
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* Картка по низу */
+  min-height: 520px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  padding: 45px;
+  border-radius: 12px;
+  width: 460px;
+  z-index: 1; 
+}
+
+.service-card__title { font-size: 32px; margin-bottom: 20px; }
+.service-card__desc { color: var(--color-gray); line-height: 1.6; margin-bottom: 30px; }
+.service-card__price-title { font-size: 24px; margin-bottom: 15px; }
+.service-card__price-row { color: var(--color-gray); margin: 5px 0; }
+
+.service-card__cta {
+  background: var(--color-black);
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Карусель */
+.service-carousel {
+  position: absolute;
+  top: 0;
+  left: 0; /* Зміщення, щоб малі кола були над карткою */
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Щоб можна було клікати на картку під каруселлю */
+}
+
+.service-carousel__track {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+  pointer-events: auto;
+}
+
+/* Елементи кіл */
+.circle-item {
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: var(--transition-main);
+  position: relative;
+}
+
+/* Накладання затемнення для малих кіл */
+.circle-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  transition: var(--transition-main);
+}
+
+.circle-item span { position: relative; z-index: 2; }
+
+/* Мале коло */
+.circle-item--small {
+  width: 160px;
+  height: 160px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+  align-self: flex-start; /* Вирівнювання по верхній лінії */
+  margin-top: 30px;
+  background-color: #303030;
+}
+
+/* Велике коло */
+.circle-item--big {
+  width: 480px;
+  height: 480px;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 10px;
+  align-self: center;
+  background-color: #292727; /* Центрування по вертикалі секції */
+}
+
+.circle-item--big::after {
+  opacity: 0; /* Прибираємо затемнення для великого кола */
 }

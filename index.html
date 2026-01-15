@@ -417,73 +417,40 @@
   </div>
 </section>
 
-<section class="service section">
-  <div class="services__container">
-
-    <div class="services__header">
-      <div class="services__heading">
-        <h2 class="services__title">Service Technologies</h2>
-        <p class="services__subtitle">
-          With skilled hands, your furniture becomes a lasting
-          masterpiece to enjoy for years to come.
-        </p>
+<section class="service-section">
+  <div class="service-section__container">
+    
+    <div class="service-section__header">
+      <div class="service-section__title-group">
+        <h1 class="service-section__title">Service Technologies</h1>
+        <p class="service-section__subtitle">With skilled hands, your furniture becomes a lasting masterpiece to enjoy for years to come.</p>
       </div>
-
-      <div class="services__nav">
-        <button class="services__arrow services__arrow--prev">
-          <img src="./img/main/rightRow.svg" alt="">
-          </button>
-        <button class="services__arrow services__arrow--next">
-           <img src="./img/main/rightRow.svg" alt=""></button>
+      <div class="service-section__nav">
+        <button id="prevBtn" class="service-section__nav-arrow">‹</button>
+        <button id="nextBtn" class="service-section__nav-arrow service-section__nav-arrow--active">›</button>
       </div>
     </div>
 
-    <div class="services__body">
+    <div class="service-section__main">
+      
+     
 
-   <ul class="services__types">
-      <li class="services__type">
-        <img src="./img/service section/reshape.jpg" alt="">Reshape </li>
-      <li class="services__type">
-        <img src="./img/service section/colour restoration.jpg" alt="">
-        Colour Restoration</li>
-      <li class="services__type">
-        <img src="./img/service section/damaged.jpg" alt="">
-        Damaged Surface Repair</li>
-      <li class="services__type">
-        <img src="./img/service section/fittings.jpg" alt="">
-        Fittings & Replating</li>
-  </ul>
-
-      <div class="services__content">
-
-        <article class="services__card">
-          <h3 class="services__card-title">Spa Service</h3>
-
-          <p class="services__card-text">
-            Our Signature Spa Service renews handbags, wallets,
-            and small leather goods through deep cleaning,
-            conditioning, gentle hardware polishing, and pigment
-            touch-ups that refresh color and conceal wear.
-          </p>
-
-          <div class="services__price">
-            <strong class="services__price-title">Estimation Price</strong>
-            <p>$150–$250 Small Leather Goods</p>
-            <p>$250–$450 Handbag</p>
+      <div class="service-carousel">
+        <div class="service-carousel__track" id="carouselTrack">
           </div>
-
-          <button class="services__button">Claim 20% off</button>
-        </article>
-
-        <div class="services__preview">
-          <span class="services__preview-label">Spa Service</span>
-        </div>
-
       </div>
-    </div>
 
-  </div>
-  
+    </div>
+     <article class="service-card">
+        <h2 class="service-card__title" id="cardTitle">Spa Service</h2>
+        <p class="service-card__desc" id="cardDesc">Our Signature Spa Service renews handbags, wallets, and small leather goods through deep cleaning, conditioning, and pigment touch-ups.</p>
+        <div class="service-card__price-info">
+          <h3 class="service-card__price-title">Estimation Price</h3>
+          <p class="service-card__price-row" id="priceSmall">$150–$250 Small Leather Goods</p>
+          <p class="service-card__price-row" id="priceLarge">$250–$450 Handbag</p>
+        </div>
+        <button class="service-card__cta">CLAIM 20% OFF <span class="service-card__cta-arrow">→</span></button>
+      </article>
   </div>
 </section>
 
@@ -539,5 +506,7 @@
       
 </footer> -->
     <script src="./input-btn.js"></script>
+    <script src="./servises_carusel.js"></script>
+
 </body>
 </html>
