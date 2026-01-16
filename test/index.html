@@ -1,117 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Text Manipulation Task</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<!-- <section class="service-section">
-  <div class="header">
-    <div class="title-area">
-      <h1>Service Technologies</h1>
-      <p>With skilled hands, your furniture becomes a lasting masterpiece to enjoy for years to come.</p>
-    </div>
-    <div class="nav-controls">
-      <button id="prevBtn" class="nav-arrow">〈</button>
-      <button id="nextBtn" class="nav-arrow active">〉</button>
-    </div>
-  </div>
-   <div class="carousel-side">
-      <div class="carousel-container" id="carouselTrack"></div>
-    </div>
-  <div class="main-layout">
-    <div class="content-side">
-      <div class="info-card">
-        <h2 id="cardTitle">Spa Service</h2>
-        <p id="cardDesc">Our Signature Spa Service renews handbags, wallets, and small leather goods through deep cleaning, conditioning, and pigment touch-ups.</p>
-        <div class="price-info">
-          <h3>Estimation Price</h3>
-          <p id="priceSmall">$150–$250 Small Leather Goods</p>
-          <p id="priceLarge">$250–$450 Handbag</p>
-        </div>
-        <button class="cta-btn">CLAIM 20% OFF <span>→</span></button>
-      </div>
-    </div>
-
-   
-  </div>
-</section> -->
-
-
-<!-- <section class="service-section">
-  <div class="header">
-    <div class="title-area">
-      <h1>Service Technologies</h1>
-      <p>With skilled hands, your furniture becomes a lasting masterpiece to enjoy for years to come.</p>
-    </div>
-    <div class="nav-controls">
-      <button id="prevBtn" class="nav-arrow">‹</button>
-      <button id="nextBtn" class="nav-arrow active">›</button>
-    </div>
-  </div>
-
-
-  <div class="carousel-side">
-    <div class="carousel-container" id="carouselTrack"></div>
-  </div>
-
-
-  <div class="main-layout">
-    <div class="content-side">
-      <div class="info-card">
-        <h2 id="cardTitle">Spa Service</h2>
-        <p id="cardDesc">Our Signature Spa Service renews handbags, wallets, and small leather goods through deep cleaning, conditioning, and pigment touch-ups.</p>
-        <div class="price-info">
-          <h3>Estimation Price</h3>
-          <p id="priceSmall">$150–$250 Small Leather Goods</p>
-          <p id="priceLarge">$250–$450 Handbag</p>
-        </div>
-        <button class="cta-btn">CLAIM 20% OFF <span>→</span></button>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-<section class="service-section">
-  <div class="service-section__container">
-    
-    <header class="service-section__header">
-      <div class="service-section__title-group">
-        <h1 class="service-section__title">Service Technologies</h1>
-        <p class="service-section__subtitle">With skilled hands, your furniture becomes a lasting masterpiece to enjoy for years to come.</p>
-      </div>
-      <div class="service-section__nav">
-        <button id="prevBtn" class="service-section__nav-arrow">‹</button>
-        <button id="nextBtn" class="service-section__nav-arrow service-section__nav-arrow--active">›</button>
-      </div>
-    </header>
-
-    <div class="service-section__main">
-      
-      <article class="service-card">
-        <h2 class="service-card__title" id="cardTitle">Spa Service</h2>
-        <p class="service-card__desc" id="cardDesc">Our Signature Spa Service renews handbags, wallets, and small leather goods through deep cleaning, conditioning, and pigment touch-ups.</p>
-        <div class="service-card__price-info">
-          <h3 class="service-card__price-title">Estimation Price</h3>
-          <p class="service-card__price-row" id="priceSmall">$150–$250 Small Leather Goods</p>
-          <p class="service-card__price-row" id="priceLarge">$250–$450 Handbag</p>
-        </div>
-        <button class="service-card__cta">CLAIM 20% OFF <span class="service-card__cta-arrow">→</span></button>
-      </article>
-
-      <div class="service-carousel">
-        <div class="service-carousel__track" id="carouselTrack">
-          </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <body>
-    <script src="./btn.js"></script>
+
+<div class="controls">
+    <input type="text" id="textInput" placeholder="Введіть текст сюди...">
+    <button id="renderBtn">Відобразити</button>
+</div>
+
+<div id="canvas" class="canvas">
+    </div>
+
+<div id="selection-frame" class="selection-frame"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
