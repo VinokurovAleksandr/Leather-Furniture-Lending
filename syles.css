@@ -1025,11 +1025,6 @@ font-weight: 800;
 
 /* ==  INCLUDED SECTION=== */
 
-.included {
-}
-
-.included__container {
-}
 .included__header {
   display: flex;
   flex-direction: column;
@@ -1057,8 +1052,7 @@ font-weight: 800;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.included__item {
-}
+
 .included-card {
   display: flex;
   align-items: flex-start;
@@ -1072,11 +1066,8 @@ font-weight: 800;
   flex-shrink: 0;
   width: 30px;
   height: 30px;
-
-
 }
-.included-card__content {
-}
+
 .included-card__title {
   position: relative;
   font-size: 25px;
@@ -1086,4 +1077,107 @@ font-weight: 800;
 
 .included-card__description {
   color: var(--text-gray);
+}
+
+/*=== STATS SECTION ===*/
+
+.stats {
+}
+
+.stats__header {
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+.stats__title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.stats__subtitle {
+  color: var(--text-gray);
+}
+.stats__grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.stats__item {
+}
+.stat-card {
+  flex: 1;
+  padding-left: 24px;
+  border-left: 1px solid var(--form-grey)
+}
+
+.stat-card:first-child{
+  border-left: none;
+  padding-left: 0;
+}
+
+.stat-card__value {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.stat-card__symbol {
+  color: var(--accent-orange);
+  
+}
+.stat-card__label {
+  color: var(--text-gray);
+}
+.stats__button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--main-white);
+  background-color: var(--accent-orange);
+  padding: 15px 60px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* === FEATURED SECTION  === */
+
+.featured {
+}
+
+.featured__title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.featured__slider {
+  display: flex;
+  justify-content: space-between; /* Рівномірний розподіл */
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.featured__track {
+ display: flex;
+  justify-content: space-between; /* Рівномірний розподіл */
+  align-items: center;
+  gap: 20px;
+}
+.featured__item {
+ /* flex: 0 1 calc(16.666% - 20px);  */
+  display: flex;
+  justify-content: center;
+}
+.featured__logo {
+  max-width: 100%;
+  height: auto;
 }
