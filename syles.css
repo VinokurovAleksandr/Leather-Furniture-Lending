@@ -444,6 +444,7 @@ padding: 10px 0;
   border-radius: 50%;
   color: var(--main-white);
   font-size: 20px;
+  cursor: pointer;
 }
 
 .craft__projects-btn{
@@ -572,8 +573,8 @@ padding: 10px 0;
   background-color: var(--main-white);
 }
 
-.service-card__link span{
-  color: var(--text-gray);
+.category-card__rows{
+  color: var(--main-dark);
 }
 
 /* === REVIEWS  SECTION ===*/
@@ -1181,3 +1182,124 @@ font-weight: 800;
   max-width: 100%;
   height: auto;
 }
+
+
+/* === ABOUT SECTION === */
+
+.about {
+}
+
+.about__container {
+}
+.about__header {
+  max-width: 512px;
+  margin-bottom: 60px;
+}
+.about__title {
+  text-align: left;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.about__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.about__starts {
+  color: var(--accent-orange);
+}
+.about__score {
+  font-size: 12px;
+  color: var(--text-gray);
+  text-align: left;
+}
+.about__subtitle {
+  color: var(--text-gray);
+  margin-top: 15px;
+
+}
+
+.about__accordions-wrapper{
+    display: flex;
+    align-items: stretch;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.about__accordions {
+  flex: 1;
+ 
+}
+.accordion {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--backgroung-grey);
+  border: 1px solid var(--form-grey);
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.accordion:last-child{
+  margin-bottom: 0;
+}
+
+.accordion-item__summary {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: left;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.accordion-item__icon{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.accordion-item__icon::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--main-dark);
+  border-bottom: 2px solid var(--main-dark);
+  transform: rotate(45deg); 
+}
+
+.accordion[open] .accordion-item__icon {
+  transform: rotate(180deg);
+}
+
+.accordion__content {
+  color: var(--text-gray);
+}
+.about__media {
+  flex: 1;
+  display: flex;
+}
+.about__img-wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: var(--backgroung-grey);
+}
+.about__img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
