@@ -22,3 +22,23 @@
       textInput.value = fileInput.files[0].name;
     }
   });
+
+
+  // check__form 
+
+const checkFileInput = document.querySelector('.check__form-file');
+const checkButton = document.querySelector('.check__form-btn');
+const checkTextInput = document.querySelector('.check__form-input');
+
+checkButton.addEventListener('click', () => {
+  checkFileInput.click();
+});
+
+checkFileInput.addEventListener('change', () => {
+  if (checkFileInput.files.length > 0) {
+    checkTextInput.value = checkFileInput.files[0].name;
+    
+    // change name file
+    // checkButton.textContent = checkFileInput.files[0].name;
+  }
+});

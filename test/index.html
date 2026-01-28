@@ -7,15 +7,58 @@
 </head>
 <body>
 
-<div class="controls">
-    <input type="text" id="textInput" placeholder="Введіть текст сюди...">
-    <button id="renderBtn">Відобразити</button>
-</div>
+<section class="blog section">
+  <div class="blog__container">
+    <header class="blog__header">
+      <h2 class="blog__title">Our Blog</h2>
+      <p class="blog__subtitle">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </header>
 
-<div id="canvas" class="canvas">
+    <div class="blog__grid">
+      <article class="blog__item blog__item--main">
+        <div class="blog__image-wrapper">
+          <span class="blog__category">GARMENTS</span>
+          <img src="path/to/photo.jpg" alt="Post photo" class="blog__image">
+        </div>
+        <div class="blog__content">
+          <h3 class="blog__item-title">Lorem ipsum dolor sit ametconse</h3>
+          <p class="blog__item-text">Sed do eiusmod tempor incididunt ut labore et dolore</p>
+          <a href="#" class="blog__link">READ MORE</a>
+        </div>
+      </article>
+
+      <article class="blog__item blog__item--small">
+        <div class="blog__image-wrapper">
+          <span class="blog__category">HANDBAGS</span>
+          <img src="path/to/photo.jpg" alt="Post photo" class="blog__image">
+        </div>
+        <div class="blog__content">
+          <h3 class="blog__item-title">Lorem ipsum dolor sit ametconse</h3>
+          <p class="blog__item-text">Sed do eiusmod tempor incididunt ut labore et dolore</p>
+          <a href="#" class="blog__link">READ MORE</a>
+        </div>
+      </article>
+
+      <article class="blog__item blog__item--small">
+        <div class="blog__image-wrapper">
+          <span class="blog__category">FURNITURE</span>
+          <img src="path/to/photo.jpg" alt="Post photo" class="blog__image">
+        </div>
+        <div class="blog__content">
+          <h3 class="blog__item-title">Lorem ipsum dolor sit ametconse</h3>
+          <p class="blog__item-text">Sed do eiusmod tempor incididunt ut labore et dolore</p>
+          <a href="#" class="blog__link">READ MORE</a>
+        </div>
+      </article>
     </div>
 
-<div id="selection-frame" class="selection-frame"></div>
+    <div class="blog__footer">
+      <a href="#" class="blog__btn-more">READ MORE FROM BLOG</a>
+    </div>
+  </div>
+</section>
 
 <script src="script.js"></script>
 </body>

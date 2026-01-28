@@ -819,11 +819,11 @@
       <p class="check_subtitle">Instant check — no signup required.</p>
     </div>
 
-    <form class="hero__form zip-form" action="#" method="post" novalidate>
-        <label class="zip-form__field" for="zip">
+    <form class="check__form" action="#" method="post" novalidate>
+        <label class="check__form-field" for="zip">
           <span class="visually-hidden">ZIP code</span>
           <input
-            class="zip-form__input"
+            class="check__form-input"
             type="text"
             id="zip"
             name="zip"
@@ -836,16 +836,206 @@
 
         <!-- hodden file input -->
            <input
-            class="zip-form__file"
+            class="check__form-file"
             type="file"
             id="zipFile"
             name="zipFile"
           />
 
-        <button class="zip-form__btn" type="button">CHECK YOUR AREA</button>
+        <button class="check__form-btn" type="button">CHECK YOUR AREA</button>
       </form>
   </div>
 </section>
+
+<section class="faq section">
+  <div class="faq__container">
+
+    <div class="faq__header">
+      <h2 class="faq__title">FAQ</h2>
+      <p class="faq__subtitle">
+        Have a question? Check out our Frequently Asked Questions to get instant answers about how things work, what to expect, and where to find help.
+      </p>
+    </div>
+
+    <div class="faq__list">
+      
+      <details class="faq__item" open>
+        <summary class="faq__question">
+          What types of customers do you usually work with?
+        <span class="faq__icon"></span>
+        </summary>
+        <div class="faq__answer">
+          <p>
+            We serve private collectors, homeowners, museums, interior designers, and anyone who values craftsmanship and restoration over replacement. Our experience covers everything from luxury handbags and car interiors to antique furniture and decorative pieces
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item" close>
+        <summary class="faq__question">
+          What questions should I think about before contacting you?
+        <span class="faq__icon"></span>
+        </summary>
+        <div class="faq__answer">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
+        </div>
+      </details>
+
+      <details class="faq__item" close>
+        <summary class="faq__question">
+          What should customers know about your pricing?
+        <span class="faq__icon"></span>
+        </summary>
+        
+        <div class="faq__answer">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item" close>
+        <summary class="faq__question">
+          What is your typical process for working with a new customer?
+        <span class="faq__icon"></span>
+        </summary>
+        <div class="faq__answer">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item" close>
+        <summary class="faq__question">
+          What advice would you give to someone looking for a restoration provider?
+          <span class="faq__icon"></span>
+        </summary>
+        <div class="faq__answer">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item" close>
+        <summary class="faq__question">
+          What kind of training or experience do your artisans have?
+        <span class="faq__icon"></span>
+        </summary>
+        <div class="faq__answer">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item" close>
+        <summary class="faq__question">
+          Can you describe a recent project you're proud of?
+        <span class="faq__icon"></span>
+        </summary>
+        <div class="faq__answer">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item" close>
+        <summary class="faq__question">
+          How did your company get started?
+        <span class="faq__icon"></span>
+        </summary>
+        <div class="faq__answer">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq__footer">
+      <a href="#" class="faq__btn">send us a question</a>
+    </div>
+  </div>
+</section>
+
+<section class="blog section">
+  <div class="blog__container">
+    <div class="blog__header">
+      <h2 class="blog__title">Our Blog</h2>
+      <p class="blog__description">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+
+    <div class="blog__content">
+      <!-- BIG POST -->
+      <article class="blog-card blog-card--large">
+        <div class="blog-card__image">
+          <span class="blog-card__tag">Garments</span>
+        </div>
+
+        <div class="blog-card__body">
+          <h3 class="blog-card__title">
+            Lorem ipsum dolor sit ametconse
+          </h3>
+          <p class="blog-card__text">
+            Sed do eiusmod tempor incididunt ut labore et dolore
+          </p>
+          <a href="#" class="blog-card__link blog-card__link--highlight">
+            Read More
+          </a>
+        </div>
+      </article>
+
+      <!-- SMALL POSTS -->
+      <div class="blog__list">
+        <article class="blog-card blog-card--horizontal">
+          <div class="blog-card__image">
+            <span class="blog-card__tag">Handbags</span>
+          </div>
+
+          <div class="blog-card__body">
+            <h3 class="blog-card__title">
+              Lorem ipsum dolor sit ametconse
+            </h3>
+            <p class="blog-card__text">
+              Sed do eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <a href="#" class="blog-card__link">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card blog-card--horizontal">
+          <div class="blog-card__image">
+            <span class="blog-card__tag">Furniture</span>
+          </div>
+
+          <div class="blog-card__body">
+            <h3 class="blog-card__title">
+              Lorem ipsum dolor sit ametconse
+            </h3>
+            <p class="blog-card__text">
+              Sed do eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <a href="#" class="blog-card__link">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="blog__footer">
+      <a href="#" class="blog__button">
+        Read More From Blog
+      </a>
+    </div>
+  </div>
+</section>
+
 
 </main>
 <!-- <footer class="section">
