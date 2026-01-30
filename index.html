@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./syles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Leather Furniture</title>
 </head>
 <body>
@@ -11,20 +11,28 @@
       <div class="header__banner">Limited time offer: Get 20% off</div>
       <div class="header__container">
         <nav class="header__nav">
+
             <a class="header__logo" href="#">
                 <img src="./img/header/logo.svg" alt="logo">
             </a>
+
+      <button class="header__burger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
             <ul class="header__list">
-                <li class="header__item"><a class="header__link href="#">Home</a></li>
-                <li class="header__item"><a class="header__link href="#">Bags</a></li>
-                <li class="header__item"><a class="header__link href="#">Garments</a></li>
-                <li class="header__item"><a class="header__link href="#">Furniture</a></li>
-                <li class="header__item"><a class="header__link href="#">Goods</a></li>
-                <li class="header__item"><a class="header__link href="#">More</a></li>
+                <li class="header__item"><a class="header__link" href="#">Home</a></li>
+                <li class="header__item"><a class="header__link" href="#">Bags</a></li>
+                <li class="header__item"><a class="header__link" href="#">Garments</a></li>
+                <li class="header__item"><a class="header__link" href="#">Furniture</a></li>
+                <li class="header__item"><a class="header__link" href="#">Goods</a></li>
+                <li class="header__item"><a class="header__link" href="#">More</a></li>
             </ul>
+
         </nav>
       </div>
-     
 </header>
     <main>
 <section class="hero section" aria-labelledby="hero-title">
@@ -184,7 +192,7 @@
               See more <br> projects
             </span>
             </div>
-            <div class="craft__projetcts-icon">
+            <div class="craft__projects-icon">
               <img src="./img/main/cursor-icon.svg" alt="">
             </div>
          
@@ -1028,67 +1036,74 @@
       </div>
     </div>
 
-    <div class="blog__footer">
-      <a href="#" class="blog__button">
-        Read More From Blog
-      </a>
+    <div class="reviews__button blog__footer">
+        <a class="reviews__button-link">read more from blog</a>
+        <img src="./img/main/rightRow.svg" alt="rows icon">
     </div>
+
+    
   </div>
 </section>
 
 
 </main>
-<!-- <footer class="section">
-  <div class="footer__container">
-  <h2>Company Name</h2>
-        <div>
-            <div>
-                <h5>Bio</h5>
-                <p>Premium leather & vinyl furniture repair - color & finish restoration, reshape, cleaning, and tear repairs.</p>
-            </div>
-            <div>
-                <h4>Get a Quote</h4>
-                <ul>
-                    <li><a href="">Handbags</a></li>
-                    <li><a href="">Garments</a></li>
-                    <li><a href="">Furniture</a></li>
-                    <li><a href="">Other Leather Goods</a></li>
 
-                </ul>
-            </div>
-            <div>
-                <address>
-                    <h4>Get in Touch</h4>
-                    <ul>
-                        <li><a href="mailto:example@mail.com">Email goes here</a></li>
-                        <li><a href="tel:+380990000000">Phone number goes here</a></li>
-                        <li><a href="#">Opportunity for Artists</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div>
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact Us Bot</a></li>
-                    <li><a href="#">Warranty & Maintenance</a></li>
-                </ul>
-            </div>
-        </div>
-        <div><p>&copy; 2025 Leather Repair Studio. All Rights Reserved.</p></div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                </ul>
-            </nav>
-        </div>
+<footer class="footer section">
+  <div class="footer__container">
+    <h2 class="footer__logo">Company Name</h2>
+
+    <div class="footer__content">
+      <div class="footer__column footer__column--bio">
+        <h3 class="footer__title">Bio</h3>
+        <p class="footer__text">
+          Premium leather & vinyl furniture repair - color & finish restoration, reshape, cleaning, and tear repairs.
+        </p>
+      </div>
+
+      <div class="footer__column">
+        <h3 class="footer__title">Get a Quote</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Handbags</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Garments</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Furniture</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Other Leather Goods</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h3 class="footer__title">Get in Touch</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="mailto:info@example.com" class="footer__link">Email goes here</a></li>
+          <li class="footer__item"><a href="tel:+123456789" class="footer__link">Phone number goes here</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Opportunity for Artists</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h3 class="footer__title">Support</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Contact Us Bot</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Warranty & Maintenance</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2025 Leather Repair Studio. All Rights Reserved.</p>
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Privacy Policy</a>
+        <a href="#" class="footer__legal-link">Terms of Service</a>
+        <a href="#" class="footer__legal-link">Cookie Policy</a>
+      </div>
+    </div>
   </div>
-      
-</footer> -->
+</footer>
+
+
     <script src="./input-btn.js"></script>
+    <script src="./burger.js"></script>
+
     <script src="./servises_carusel.js"></script>
 
 </body>
