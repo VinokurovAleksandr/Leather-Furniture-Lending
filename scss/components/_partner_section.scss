@@ -1,0 +1,20 @@
+.partner{
+  padding-bottom: 60px;
+}
+.partner__title{
+ font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.partner_subtitle{
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--text-gray);
+  margin-bottom: 30px;
+
+}
+.partner__img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
