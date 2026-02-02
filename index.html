@@ -1,1110 +1,1308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/main.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/main.min.css" />
     <title>Leather Furniture</title>
-</head>
-<body>
-<header>
+  </head>
+  <body>
+    <header>
       <div class="header__banner">Limited time offer: Get 20% off</div>
       <div class="header__container">
         <nav class="header__nav">
+          <a class="header__logo" href="#">
+            <img src="./img/header/logo.svg" alt="logo" />
+          </a>
 
-            <a class="header__logo" href="#">
-                <img src="./img/header/logo.svg" alt="logo">
-            </a>
+          <button class="header__burger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-      <button class="header__burger" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="#">Home</a></li>
-                <li class="header__item"><a class="header__link" href="#">Bags</a></li>
-                <li class="header__item"><a class="header__link" href="#">Garments</a></li>
-                <li class="header__item"><a class="header__link" href="#">Furniture</a></li>
-                <li class="header__item"><a class="header__link" href="#">Goods</a></li>
-                <li class="header__item"><a class="header__link" href="#">More</a></li>
-            </ul>
-
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Bags</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Garments</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Furniture</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Goods</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">More</a>
+            </li>
+          </ul>
         </nav>
       </div>
-</header>
+    </header>
     <main>
-<section class="hero section" aria-labelledby="hero-title">
-  <div class="hero__container">
+      <section class="hero section">
+        <div class="hero__container">
+          <!-- top badges / social proof -->
+          <div class="hero__top">
+            <div class="hero__badge">
+              <img
+                class="hero__badge-icon"
+                src="./img/main/star.svg"
+                alt="star icon"
+                aria-hidden="true"
+              />
+              <span class="hero__badge-text">4.8 star-rated service</span>
+            </div>
 
-    <!-- top badges / social proof -->
-    <div class="hero__top">
-      <div class="hero__badge">
-          <img class="hero__badge-icon" src="./img/main/star.svg" alt="star icon" aria-hidden="true">
-        <span class="hero__badge-text">4.8 star-rated service</span>
-      </div>
+            <div class="hero__social-proof">
+              <ul class="hero__avatars" aria-hidden="true">
+                <li class="hero__avatar">
+                  <img
+                    class="hero__avatar-img"
+                    src="./img/main/ellopse1.png"
+                    alt=""
+                  />
+                </li>
+                <li class="hero__avatar">
+                  <img
+                    class="hero__avatar-img"
+                    src="./img/main/ellopse2.png"
+                    alt=""
+                  />
+                </li>
+                <li class="hero__avatar">
+                  <img
+                    class="hero__avatar-img"
+                    src="./img/main/ellopse3.jpg"
+                    alt=""
+                  />
+                </li>
+              </ul>
 
-      <div class="hero__social-proof" aria-label="Customer satisfaction">
-        <ul class="hero__avatars" aria-hidden="true">
-          <li class="hero__avatar">
-            <img class="hero__avatar-img" src="./img/main/ellopse1.png" alt="">
-          </li>
-          <li class="hero__avatar">
-            <img class="hero__avatar-img" src="./img/main/ellopse2.png" alt="">
-          </li>
-          <li class="hero__avatar">
-            <img class="hero__avatar-img" src="./img/main/ellopse3.jpg" alt="">
-          </li>
-        </ul>
-
-          <p class="hero__social-text">
-          <strong class="hero__social-number">1500+</strong>
-          <span class="hero__social-label">Satisfied customers</span>
-        </p>
-
-      </div>
-    </div>
-
-    <!-- main content -->
-    <div class="hero__content">
-      <h1 class="hero__title">Leather Furniture Repair in Austin </h1>
-      <p class="hero__subtitle">We breathe new life into your leather goods.</p>
-
-      <form class="hero__form zip-form" action="#" method="post" novalidate>
-        <label class="zip-form__field" for="zip">
-          <span class="visually-hidden">ZIP code</span>
-          <input
-            class="zip-form__input"
-            type="text"
-            id="zip"
-            name="zip"
-            inputmode="numeric"
-            autocomplete="postal-code"
-            placeholder="Enter your ZIP"
-            readonly
-          />
-        </label>
-
-        <!-- hodden file input -->
-           <input
-            class="zip-form__file"
-            type="file"
-            id="zipFile"
-            name="zipFile"
-          />
-
-        <button class="zip-form__btn" type="button">CHECK YOUR AREA</button>
-      </form>
-
-      <ul class="hero__perks" aria-label="Service perks">
-        <li class="hero__perk">
-          <img class="hero__perk-icon" src="./img/main/delivery.svg" alt="icon delivery" aria-hidden="true">
-          <span class="hero__perk-text">Free pickup &amp; delivery</span>
-        </li>
-
-        <li class="hero__perk">
-          <img class="hero__perk-icon" src="./img/main/gifts.svg" alt="icon  Save up" aria-hidden="true">
-          <span class="hero__perk-text">Save up to 20% today</span>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<section class="partner section">
-  <div class="partner__container">
-    <h2 class="partner__title">Trusted Partner to Premier Brands</h2>
-      <h3 class="partner_subtitle">Body text goes here</h3>
-    <div class="partner__img">
-      <img src="./img/section brands/chanel.svg" alt="">
-      <img src="./img/section brands/YSL.svg" alt="">
-      <img src="./img/section brands/gucci.svg" alt="">
-      <img src="./img/section brands/hermes.svg" alt="">
-      <img src="./img/section brands/Lv.svg" alt="">
-    </div>
-  </div>         
-</section>
-
-<!-- craft section -->
-<section class="craft section" aria-labelledby="craft-title">
-  <div class="craft__container">
-    <div class="craft__header">
-      <h2 class="craft__title">Our Craft in Action</h2>
-      <div class="craft__lead">
-        <p >
-        Explore how we bring life back to every piece – see the transformation before and after our work.
-      </p>
-      </div>
-      
-    </div>
-
-    <div class="craft__grid" role="region" aria-label="Craft showcase and services">
-      <!-- LEFT: showcase -->
-      <article class="craft-showcase" aria-labelledby="showcase-title">
-        <figure class="craft-showcase__media">
-           <div class="craft-showcase__img">
-            <img
-            src="./img/background.png"
-            alt=""
-            loading="lazy"
-          />
-           </div>
-        
-           <div class="craft-showcase__wrapper">
-              <img class="craft-showcase__icon" src="./img/main/location.svg" alt="star icon" aria-hidden="true">  
-              <span class="craft-showcase__badge" aria-label="Location">Bee Cave, TX</span>
-           </div>
-        </figure>
-
-        <div class="craft-showcase__content">
-          <div class="craft-showcase__head">
-            <h3 id="showcase-title" class="craft-showcase__title">
-              Hardware Restoration Lorem ipsum poeira da ginga navidad
-            </h3>
-
-            <div class="craft-showcase__meta">
-              <span class="craft-showcase__meta-label">Price</span>
-              <span class="craft-showcase__price" aria-label="Price">$250</span>
+              <p class="hero__social-text">
+                <strong class="hero__social-number">1500+</strong>
+                <span class="hero__social-label">Satisfied customers</span>
+              </p>
             </div>
           </div>
 
-          <div class="craft-showcase__text">
-            <p>
-              Any cracks and scuffs on the leather were skilfully treated and recolored, making the surface look refreshed
-              and almost like new. The lining was also repaired with great care, and the hardware such as buckles and clasps
-              were replaced so the bag functions smoothly again.
+          <!-- main content -->
+          <div class="hero__content">
+            <h1 class="hero__title">Leather Furniture Repair in Austin</h1>
+            <p class="hero__subtitle">
+              We breathe new life into your leather goods.
             </p>
-          </div>
 
-          <div class="craft-showcase__nav" aria-label="Project navigation">
-            <button class="craft-showcase__nav-btn" type="button" aria-label="Previous project">
-              <span aria-hidden="true">‹</span>
-            </button>
+            <form
+              class="hero__form zip-form"
+              action="#"
+              method="post"
+              novalidate
+            >
+              <label class="zip-form__field" for="zip">
+                <span class="visually-hidden">ZIP code</span>
+                <input
+                  class="zip-form__input"
+                  type="text"
+                  id="zip"
+                  name="zip"
+                  inputmode="numeric"
+                  autocomplete="postal-code"
+                  placeholder="Enter your ZIP"
+                  readonly
+                />
+              </label>
 
-            <button class="craft-showcase__nav-btn" type="button" aria-label="Next project">
-              <span aria-hidden="true">›</span>
-            </button>
+              <!-- hodden file input -->
+              <input
+                class="zip-form__file"
+                type="file"
+                id="zipFile"
+                name="zipFile"
+              />
 
-            <div class="craft__projects-btn">
-              <span class="craft-showcase__cta" href="#">
-              See more <br> projects
-            </span>
-            </div>
-            <div class="craft__projects-icon">
-              <img src="./img/main/cursor-icon.svg" alt="">
-            </div>
-         
+              <button class="zip-form__btn" type="button">
+                CHECK YOUR AREA
+              </button>
+            </form>
+
+            <ul class="hero__perks">
+              <li class="hero__perk">
+                <img
+                  class="hero__perk-icon"
+                  src="./img/main/delivery.svg"
+                  alt="icon delivery"
+                  aria-hidden="true"
+                />
+                <span class="hero__perk-text">Free pickup &amp; delivery</span>
+              </li>
+
+              <li class="hero__perk">
+                <img
+                  class="hero__perk-icon"
+                  src="./img/main/gifts.svg"
+                  alt="icon  Save up"
+                  aria-hidden="true"
+                />
+                <span class="hero__perk-text">Save up to 20% today</span>
+              </li>
+            </ul>
           </div>
         </div>
-      </article>
+      </section>
 
-      <!-- RIGHT: services -->
-      <aside class="craft-categories" aria-labelledby="categories-title">
-        <div class="craft-categories__panel">
-          <div class="craft-categories__header">
-            <h3 id="categories-title" class="craft-categories__title">Cta lorem ipsum navidad</h3>
-            <p class="craft-categories__">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-            </p>
+      <section class="partner section">
+        <div class="partner__container">
+          <h2 class="partner__title">Trusted Partner to Premier Brands</h2>
+          <h3 class="partner_subtitle">Body text goes here</h3>
+          <div class="partner__img">
+            <img src="./img/section-brands/chanel.svg" alt="" />
+            <img src="./img/section-brands/YSL.svg" alt="" />
+            <img src="./img/section-brands/gucci.svg" alt="" />
+            <img src="./img/section-brands/hermes.svg" alt="" />
+            <img src="./img/section-brands/Lv.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- craft section -->
+      <section class="craft section">
+        <div class="craft__container">
+          <div class="craft__header">
+            <h2 class="craft__title">Our Craft in Action</h2>
+            <div class="craft__lead">
+              <p>
+                Explore how we bring life back to every piece – see the
+                transformation before and after our work.
+              </p>
+            </div>
           </div>
 
-          <ul class="craft-categories__list" aria-label="Categories list">
-            <li class="craft-categories__item">
-              <article class="category-card" aria-label="Handbags">
-                <div class="category-card__icon">
-                  <img src="./img/background.png" alt="">
+          <div class="craft__grid" role="region">
+            <!-- LEFT: showcase -->
+            <article class="craft-showcase">
+              <figure class="craft-showcase__media">
+                <div class="craft-showcase__img">
+                  <img src="./img/background.png" alt="" loading="lazy" />
                 </div>
 
-                <div class="category-card__body">
-                  <h4 class="category-card__title">Handbags</h4>
-                  <p class="category-card__desc">
-                    Repairs and restoration for everyday essentials and luxury pieces.
+                <div class="craft-showcase__wrapper">
+                  <img
+                    class="craft-showcase__icon"
+                    src="./img/main/location.svg"
+                    alt="star icon"
+                    aria-hidden="true"
+                  />
+                  <span class="craft-showcase__badge">Bee Cave, TX</span>
+                </div>
+              </figure>
+
+              <div class="craft-showcase__content">
+                <div class="craft-showcase__head">
+                  <h3 id="showcase-title" class="craft-showcase__title">
+                    Hardware Restoration Lorem ipsum poeira da ginga navidad
+                  </h3>
+
+                  <div class="craft-showcase__meta">
+                    <span class="craft-showcase__meta-label">Price</span>
+                    <span class="craft-showcase__price">$250</span>
+                  </div>
+                </div>
+
+                <div class="craft-showcase__text">
+                  <p>
+                    Any cracks and scuffs on the leather were skilfully treated
+                    and recolored, making the surface look refreshed and almost
+                    like new. The lining was also repaired with great care, and
+                    the hardware such as buckles and clasps were replaced so the
+                    bag functions smoothly again.
                   </p>
                 </div>
 
-                <div class="category-card__link">
-                  <a href="#handbags" aria-label="Open Handbags service">
-                  <span aria-hidden="true" class="category-card__rows">›</span>
-                </a>
+                <div class="craft-showcase__nav">
+                  <button class="craft-showcase__nav-btn" type="button">
+                    <span aria-hidden="true">‹</span>
+                  </button>
+
+                  <button class="craft-showcase__nav-btn" type="button">
+                    <span aria-hidden="true">›</span>
+                  </button>
+
+                  <div class="craft__projects-btn">
+                    <a class="craft-showcase__cta" href="#">
+                      See more <br />
+                      projects
+                    </a>
+                  </div>
+                  <div class="craft__projects-icon">
+                    <img src="./img/main/cursor-icon.svg" alt="" />
+                  </div>
                 </div>
+              </div>
+            </article>
 
-              </article>
-            </li>
-
-            <li class="craft-categories__item">
-              <article class="category-card" aria-label="Handbags">
-                <div class="category-card__icon">
-                  <img src="./img/background.png" alt="">
-                </div>
-
-                <div class="category-card__body">
-                  <h4 class="category-card__title">Garments</h4>
-                  <p class="category-card__desc">
-                    Professional care and repair for clothing made of leather, suede, or fabric/leather mix.                  </p>
-                </div>
-
-                <div class="category-card__link">
-                  <a href="#handbags" aria-label="Open Handbags service">
-                  <span aria-hidden="true" class="category-card__rows">›</span>
-                </a>
-                </div>
-
-              </article>
-            </li>
-            <li class="craft-categories__item">
-              <article class="category-card" aria-label="Handbags">
-                <div class="category-card__icon">
-                  <img src="./img/background.png" alt="">
-                </div>
-
-                <div class="category-card__body">
-                  <h4 class="category-card__title">Furniture</h4>
-                  <p class="category-card__desc">
-                    Repair, re-dye, and restore leather and fabric furniture to extend its life.
+            <!-- RIGHT: services -->
+            <aside class="craft-categories" aria-labelledby="categories-title">
+              <div class="craft-categories__panel">
+                <div class="craft-categories__header">
+                  <h3 id="categories-title" class="craft-categories__title">
+                    Cta lorem ipsum navidad
+                  </h3>
+                  <p class="craft-categories__">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore.
                   </p>
                 </div>
 
-                <div class="category-card__link">
-                  <a href="#handbags" aria-label="Open Handbags service">
-                  <span aria-hidden="true" class="category-card__rows">›</span>
-                </a>
-                </div>
+                <ul class="craft-categories__list" aria-label="Categories list">
+                  <li class="craft-categories__item">
+                    <article class="category-card" aria-label="Handbags">
+                      <div class="category-card__icon">
+                        <img src="./img/background.png" alt="" />
+                      </div>
 
-              </article>
+                      <div class="category-card__body">
+                        <h4 class="category-card__title">Handbags</h4>
+                        <p class="category-card__desc">
+                          Repairs and restoration for everyday essentials and
+                          luxury pieces.
+                        </p>
+                      </div>
+
+                      <div class="category-card__link">
+                        <a href="#handbags" aria-label="Open Handbags service">
+                          <span aria-hidden="true" class="category-card__rows"
+                            >›</span
+                          >
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="craft-categories__item">
+                    <article class="category-card" aria-label="Handbags">
+                      <div class="category-card__icon">
+                        <img src="./img/background.png" alt="" />
+                      </div>
+
+                      <div class="category-card__body">
+                        <h4 class="category-card__title">Garments</h4>
+                        <p class="category-card__desc">
+                          Professional care and repair for clothing made of
+                          leather, suede, or fabric/leather mix.
+                        </p>
+                      </div>
+
+                      <div class="category-card__link">
+                        <a href="#handbags" aria-label="Open Handbags service">
+                          <span aria-hidden="true" class="category-card__rows"
+                            >›</span
+                          >
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="craft-categories__item">
+                    <article class="category-card" aria-label="Handbags">
+                      <div class="category-card__icon">
+                        <img src="./img/background.png" alt="" />
+                      </div>
+
+                      <div class="category-card__body">
+                        <h4 class="category-card__title">Furniture</h4>
+                        <p class="category-card__desc">
+                          Repair, re-dye, and restore leather and fabric
+                          furniture to extend its life.
+                        </p>
+                      </div>
+
+                      <div class="category-card__link">
+                        <a href="#handbags" aria-label="Open Handbags service">
+                          <span aria-hidden="true" class="category-card__rows"
+                            >›</span
+                          >
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="craft-categories__item">
+                    <article class="category-card" aria-label="Handbags">
+                      <div class="category-card__icon">
+                        <img src="./img/background.png" alt="" />
+                      </div>
+
+                      <div class="category-card__body">
+                        <h4 class="category-card__title">
+                          Other Leather Goods
+                        </h4>
+                        <p class="category-card__desc">
+                          Adjustments, refinishing and restoration for all types
+                          of leather goods.
+                        </p>
+                      </div>
+
+                      <div class="category-card__link">
+                        <a href="#handbags" aria-label="Open Handbags service">
+                          <span aria-hidden="true" class="category-card__rows"
+                            >›</span
+                          >
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="craft-categories__item">
+                    <article class="category-card" aria-label="Handbags">
+                      <div class="category-card__icon">
+                        <img src="./img/background.png" alt="" />
+                      </div>
+
+                      <div class="category-card__body">
+                        <h4 class="category-card__title">Lorem ipsum dolor</h4>
+                        <p class="category-card__desc">
+                          Sed do eiusmod tempor incididunt ut labore et dolore
+                          magna.
+                        </p>
+                      </div>
+
+                      <div class="category-card__link">
+                        <a href="#handbags" aria-label="Open Handbags service">
+                          <span aria-hidden="true" class="category-card__rows"
+                            >›</span
+                          >
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section">
+        <div class="reviews__container">
+          <div class="reviews__header">
+            <div class="reviews__summary">
+              <h2 class="reviews__title">Verified Customer Reviews</h2>
+
+              <div class="reviews__rating">
+                <span class="reviews__score">4.8</span>
+                <span class="reviews__stars">★★★★★</span>
+              </div>
+
+              <p class="reviews__count">894 leather restoration reviews</p>
+            </div>
+
+            <div class="reviews__verified">
+              <div class="reviews__verified-icon">
+                <img src="./img/main/smile.svg" alt="smile icon" />
+              </div>
+              <h3 class="reviews__verified-title">100% Verified Reviews</h3>
+              <p class="reviews__verified-text">
+                All reviews are from clients who have restored their leather
+                items with our professional care and craftsmanship.
+              </p>
+            </div>
+          </div>
+
+          <ul class="reviews__list">
+            <li class="review-card">
+              <div class="review-card__header">
+                <span class="review-card__avatar">SM</span>
+                <div>
+                  <strong class="review-card__name">Samantha M.</strong>
+                  <span class="review-card__location">Bee Cave, TX</span>
+                </div>
+              </div>
+
+              <div class="review-card__rating">★★★★★</div>
+
+              <p class="review-card__text">
+                Excellent service! The restoration was done quickly, and the
+                result looks absolutely perfect. Highly recommend.
+              </p>
+
+              <span class="review-card__date">Yesterday</і>
             </li>
-            <li class="craft-categories__item">
-              <article class="category-card" aria-label="Handbags">
-                <div class="category-card__icon">
-                  <img src="./img/background.png" alt="">
-                </div>
 
-                <div class="category-card__body">
-                  <h4 class="category-card__title">Other Leather Goods</h4>
-                  <p class="category-card__desc">
-                    Adjustments, refinishing and restoration for all types of leather goods.
-                    </p>
+            <li class="review-card">
+              <div class="review-card__header">
+                <span class="review-card__avatar">MS</span>
+                <div>
+                  <strong class="review-card__name">Maria S.</strong>
+                  <span class="review-card__location">Cedar Park, TX</span>
                 </div>
+              </div>
 
-                <div class="category-card__link">
-                  <a href="#handbags" aria-label="Open Handbags service">
-                  <span aria-hidden="true" class="category-card__rows">›</span>
-                </a>
-                </div>
+              <div class="review-card__rating">★★★★★</div>
 
-              </article>
-            </li>
-            <li class="craft-categories__item">
-              <article class="category-card" aria-label="Handbags">
-                <div class="category-card__icon">
-                  <img src="./img/background.png" alt="">
-                </div>
+              <p class="review-card__text">
+                Very good overall. The restoration took a bit longer than
+                expected, but the team was friendly and attentive throughout.
+              </p>
 
-                <div class="category-card__body">
-                  <h4 class="category-card__title">Lorem ipsum dolor</h4>
-                  <p class="category-card__desc">
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna.
-                  </p>
-                </div>
-
-                <div class="category-card__link">
-                  <a href="#handbags" aria-label="Open Handbags service">
-                  <span aria-hidden="true" class="category-card__rows">›</span>
-                </a>
-                </div>
-
-              </article>
+              <span class="review-card__date">Yesterday</span>
             </li>
 
+            <li class="review-card">
+              <div class="review-card__header">
+                <span class="review-card__avatar">AT</span>
+                <div>
+                  <strong class="review-card__name">Alex T.</strong>
+                  <span class="review-card__location">Round Rock, TX</span>
+                </div>
+              </div>
 
+              <div class="review-card__rating">★★★★★</div>
+
+              <p class="review-card__text">
+                Fast and professional. They answered all my questions and
+                explained every step of the restoration perfectly.
+              </p>
+
+              <span class="review-card__date">Yesterday</span>
+            </li>
           </ul>
-        </div>
-      </aside>
-    </div>
-  </div>
-</section>
 
-<section class="reviews section">
-  <div class="reviews__container">
-
-    <div class="reviews__header">
-      <div class="reviews__summary">
-        <h2 class="reviews__title">Verified Customer Reviews</h2>
-
-        <div class="reviews__rating">
-          <span class="reviews__score">4.8</span>
-          <span class="reviews__stars">★★★★★</span>
-        </div>
-
-        <p class="reviews__count">894 leather restoration reviews</p>
-      </div>
-
-      <div class="reviews__verified">
-        <div class="reviews__verified-icon">
-          <img src="./img/main/smile.svg" alt="smile icon">
-        </div>
-        <h3 class="reviews__verified-title">100% Verified Reviews</h3>
-        <p class="reviews__verified-text">
-          All reviews are from clients who have restored their leather items
-          with our professional care and craftsmanship.
-        </p>
-      </div>
-    </div>
-
-    <ul class="reviews__list">
-      <li class="review-card">
-        <div class="review-card__header">
-          <span class="review-card__avatar">SM</span>
-          <div>
-            <strong class="review-card__name">Samantha M.</strong>
-            <span class="review-card__location">Bee Cave, TX</span>
+          <div class="reviews__button">
+            <a class="reviews__button-link">See more reviews</a>
+            <img src="./img/main/rightRow.svg" alt="rows icon" />
           </div>
         </div>
+      </section>
 
-        <div class="review-card__rating">★★★★★</div>
-
-        <p class="review-card__text">
-          Excellent service! The restoration was done quickly, and the result
-          looks absolutely perfect. Highly recommend.
-        </p>
-
-        <time class="review-card__date">Yesterday</time>
-      </li>
-
-      <li class="review-card">
-        <div class="review-card__header">
-          <span class="review-card__avatar">MS</span>
-          <div>
-            <strong class="review-card__name">Maria S.</strong>
-            <span class="review-card__location">Cedar Park, TX</span>
+      <section class="video section">
+        <div class="video__container">
+          <h2 class="video__title">Take a Look at Our Craft</h2>
+          <div class="video__player">
+            <iframe
+              src="https://www.youtube.com/embed/EVHs7jmRdXk?si=C_0UJFWu9f_pE_iE"
+              title="YouTube video player"
+              height="540"
+              width="100%"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
           </div>
-        </div>
 
-        <div class="review-card__rating">★★★★★</div>
-
-        <p class="review-card__text">
-          Very good overall. The restoration took a bit longer than expected,
-          but the team was friendly and attentive throughout.
-        </p>
-
-        <time class="review-card__date">Yesterday</time>
-      </li>
-
-      <li class="review-card">
-        <div class="review-card__header">
-          <span class="review-card__avatar">AT</span>
-          <div>
-            <strong class="review-card__name">Alex T.</strong>
-            <span class="review-card__location">Round Rock, TX</span>
-          </div>
-        </div>
-
-        <div class="review-card__rating">★★★★★</div>
-
-        <p class="review-card__text">
-          Fast and professional. They answered all my questions and explained
-          every step of the restoration perfectly.
-        </p>
-
-        <time class="review-card__date">Yesterday</time>
-      </li>
-    </ul>
-    
-      <div class="reviews__button">
-        <a class="reviews__button-link" >See more reviews</a>
-        <img src="./img/main/rightRow.svg" alt="rows icon">
-      </div>
-  </div>
-</section>
-
-<section class="video section">
-  <div class="video__container">
-      <h2 class="video__title">Take a Look at Our Craft</h2>
-      <div class="video__player">
-        <iframe src="https://www.youtube.com/embed/EVHs7jmRdXk?si=C_0UJFWu9f_pE_iE" 
-          title="YouTube video player" 
-          height="540"
-          width="100%"
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <div class="video__text">
-      <p>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
-      </p>
-      </div>
-  </div>
-</section>
-
-<section class="service section">
-  <div class="service-section__container">
-    
-    <div class="service-section__header">
-      <div class="service-section__title-group">
-        <h1 class="service-section__title">Service Technologies</h1>
-        <p class="service-section__subtitle">With skilled hands, your furniture becomes a lasting masterpiece to enjoy for years to come.</p>
-      </div>
-      <div class="service-section__nav">
-        <button id="prevBtn" class="service-section__nav-arrow">‹</button>
-        <button id="nextBtn" class="service-section__nav-arrow service-section__nav-arrow--active">›</button>
-      </div>
-    </div>
-
-    <div class="service-section__main">
-      
-      <div class="service-carousel">
-        <div class="service-carousel__track" id="carouselTrack">
-          </div>
-      </div>
-
-      <article class="service-card">
-        <h2 class="service-card__title" id="cardTitle">Spa Service</h2>
-        <p class="service-card__desc" id="cardDesc">Our Signature Spa Service renews handbags, wallets, and small leather goods through deep cleaning, conditioning, and pigment touch-ups.</p>
-        <div class="service-card__price-info">
-          <h3 class="service-card__price-title">Estimation Price</h3>
-          <p class="service-card__price-row" id="priceSmall">$150–$250 Small Leather Goods</p>
-          <p class="service-card__price-row" id="priceLarge">$250–$450 Handbag</p>
-        </div>
-         <div class="service-btn reviews__button">
-          <a class="reviews__button-link">Claim 20% off</a>
-          <img src="./img/main/rightRow.svg" alt="rows icon">
-      </div>
-      </article>
-
-    </div>
-     
-  </div>
-</section>
-
-<section class="works section">
-  <div class="works__container">
-    <h2 class="works__title">How Leather Restoration Works</h2>
-
-    <div class="works__content">
-      <ol class="works__list" aria-label="Restoration steps">
-        <li class="works__item step-item">
-          <span class="step-item__number">1</span>
-          <div class="step-item__body">
-            <h3 class="step-item__title">Claim your discount voucher</h3>
-            <p class="step-item__text">
-              Copy goes here. It will have better fit for two lines
-            </p>
-          </div>
-        </li>
-
-        <li class="works__item step-item">
-          <span class="step-item__number">2</span>
-          <div class="step-item__body">
-            <h3 class="step-item__title">Fill out the form to get a quote</h3>
-            <p class="step-item__text">
-              Your exclusive discount will be automatically applied
-            </p>
-          </div>
-        </li>
-
-        <li class="works__item step-item">
-          <span class="step-item__number">3</span>
-          <div class="step-item__body">
-            <h3 class="step-item__title">Schedule pickup or on-site service</h3>
-            <p class="step-item__text">
-              Free Pickup & Delivery
-            </p>
-          </div>
-        </li>
-
-        <li class="works__item step-item">
-          <span class="step-item__number">4</span>
-          <div class="step-item__body">
-            <h3 class="step-item__title">Enjoy a like-new piece</h3>
-            <p class="step-item__text">
-              Your leather good will serve you for many more years.
-            </p>
-          </div>
-        </li>
-      </ol>
-
-      <div class="works__media">
-        <div class="works__image-wrapper">
-          <img src="./img/background.png" 
-          alt="Photo of our work" 
-          class="works__image">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="included section">
-  <div class="included__container">
-
-    <div class="included__header">
-       <h2 class="included__title">What's Included?</h2>
-    <p class="included__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-    </div>
-
-    <div class="included__content">
-
-      <article class="included__item included-card">
-        <div class="included-card__icon-wrapper">
-          <img src="./img/included/check.svg" alt="Checkmark">
-        </div>
-        <div class="included-card__content">
-             <h3 class="included-card__title">Premium Materials</h3>
-          <p class="included-card__description">
-            We use only high-quality Italian leather dyes, finishes, and restoration compounds for long-lasting results.
-          </p>
-        </div>
-      </article>
-
-      <article class="included__item included-card">
-        <div class="included-card__icon-wrapper">
-          <img src="./img/included/check.svg" alt="Checkmark">
-        </div>
-        <div class="included-card__content">
-          <h3 class="included-card__title">Craftsmanship Guarantee</h3>
-          <p class="included-card__description">
-            Every restoration is performed with precision and care - 100% satisfaction or your money back.          </p>
-        </div>
-      </article>
-
-        <article class="included__item included-card">
-          <div class="included-card__icon-wrapper">
-            <img src="./img/included/check.svg" alt="Checkmark">
-          </div>
-          <div class="included-card__content">
-            <h3 class="included-card__title">Structural & Hardware Repair</h3>
-            <p class="included-card__description">
-              Includes reinforcement of weakened areas, zipper and clasp repair, and restoration of gold, chrome, or silver coatings.
-            </p>
-          </div>
-        </article>
-  
-      <article class="included__item included-card">
-        <div class="included-card__icon-wrapper">
-          <img src="./img/included/check.svg" alt="Checkmark">
-        </div>
-        <div class="included-card__content">
-          <h3 class="included-card__title">Color & Texture Matching</h3>
-          <p class="included-card__description">
-            Custom pigment mixing to perfectly match the original tone, grain, and sheen of your leather item.
-          </p>
-        </div>
-      </article>
-      <article class="included__item included-card">
-        <div class="included-card__icon-wrapper">
-          <img src="./img/included/check.svg" alt="Checkmark">
-        </div>
-        <div class="included-card__content">
-          <h3 class="included-card__title">Post-Service Conditioning</h3>
-          <p class="included-card__description">
-            Each restored piece receives deep cleaning, conditioning, and protection for lasting beauty.
-          </p>
-        </div>
-      </article>
-
-       <article class="included__item included-card">
-        <div class="included-card__icon-wrapper">
-          <img src="./img/included/check.svg" alt="Checkmark">
-        </div>
-        <div class="included-card__content">
-          <h3 class="included-card__title">Pickup & Delivery Insurance</h3>
-          <p class="included-card__description">
-            Your item is fully insured from pickup to delivery - complete peace of mind throughout the process.
-          </p>
-        </div>
-      </article>
-
-    </div>
-  
-  </div>
-</section>
-
-<section class="stats section">
-  <div class="stats__container">
-    <div class="stats__header">
-      <h2 class="stats__title">Leather Gallery by the Numbers</h2>
-      <p class="stats__subtitle">Powering progress through data and experience - real results, proven impact, and measurable growth.</p>
-    </div>
-
-    <div class="stats__grid">
-
-      <div class="stats__item stat-card">
-        <div class="stat-card__value">7
-          <span class="stat-card__symbol">+</span></div>
-        <p class="stat-card__label">Years in Repair Service</p>
-      </div>
-
-
-
-      <div class="stats__item stat-card">
-        <div class="stat-card__value">5,2
-          <span class="stat-card__symbol">k+</span></div>
-        <p class="stat-card__label">Repaired Products</p>
-      </div>
-
- 
-
-      <div class="stats__item stat-card">
-        <div class="stat-card__value"><span class="stat-card__symbol">$</span>990,360</div>
-        <p class="stat-card__label">Repaired Leather Goods Market Value</p>
-      </div>
-
-
-
-      <div class="stats__item stat-card">
-        <div class="stat-card__value">4,8<span class="stat-card__symbol">k+</span></div>
-        <p class="stat-card__label">Customer Reviews</p>
-      </div>
-
-
-
-      <div class="stats__item stat-card">
-        <div class="stat-card__value">150<span class="stat-card__symbol">+</span></div>
-        <p class="stat-card__label">Regular Customers</p>
-      </div>
-      
-    </div>
-
-    <button class="stats__button">GET your personal discount</button>
-  </div>
-</section>
-
-<section class="featured section">
-  <div class="featured__container">
-    <h2 class="featured__title">Featured In</h2>
-    
-
-      <div class="featured__track">
-        <div class="featured__item">
-          <img src="./img/featured/business-insider.png" alt="Business Insider" class="featured__logo">
-        </div>
-        <div class="featured__item">
-          <img src="./img/featured/cnbc.png" alt="CNBC" class="featured__logo">
-        </div>
-        <div class="featured__item">
-          <img src="./img/featured/time.png" alt="TIME" class="featured__logo">
-        </div>
-        <div class="featured__item">
-          <img src="/img/featured/angies-list.png" alt="Angie's list" class="featured__logo">
-        </div>
-        <div class="featured__item">
-          <img src="./img/featured/wsj.png" alt="WSJ" class="featured__logo">
-        </div>
-        <div class="featured__item">
-          <img src="./img/featured/forbes.png" alt="Forbes" class="featured__logo">
-        </div>
-      </div>
-   
-  </div>
-</section>
-
-<section class="about section">
-  <div class="about__container">
-
-    <div class="about__header">
-      <h2 class="about__title">About Us</h2>
-      <div class="about__rating">
-        <span class="about__starts">★★★★★</span>
-        <span class="about__score">4.8 (894 Ratings)</span>
-      </div>
-      <p class="about__subtitle">Restoration is more than repair - it's an investment in what lasts. Professional restoration not only saves thousands compared to replacement but also preserves the originality, texture, and history of your piece.</p>
-    </div>
-
-    <div class="about__accordions-wrapper">
-      <div class="about__accordions">
-
-        <details class="accordion" open>
-          <summary class="accordion-item__summary">
-            <h3 class="accordion-item__title">We are specialists</h3>
-             <span class="accordion-item__icon"></span>
-          </summary>
-         
-          <div class="accordion__content">
+          <div class="video__text">
             <p>
-              We are specialists in leather restoration, serving clients who value craftsmanship, precision, and authenticity. Using premium Italian materials and advanced restoration techniques, we bring life back to furniture, handbags, and collectible leather pieces. Each item is fully insured from pickup to delivery, ensuring total peace of mind.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id.
             </p>
           </div>
-        </details>
+        </div>
+      </section>
 
-        <details class="accordion" open>
-          <summary class="accordion-item__summary">
-            <h3 class="accordion-item__title">We use exclusive techniques</h3>
-             <span class="accordion-item__icon"></span>
-          </summary>
-          <div class="accordion__content">
-            <p>
-              Our exclusive Spa Service renews handbags, wallets, and small leather goods through deep cleaning, conditioning, gentle hardware polishing, and pigment touch-ups that refresh color and conceal wear.            </p>
+      <section class="service section">
+        <div class="service-section__container">
+          <div class="service-section__header">
+            <div class="service-section__title-group">
+              <h1 class="service-section__title">Service Technologies</h1>
+              <p class="service-section__subtitle">
+                With skilled hands, your furniture becomes a lasting masterpiece
+                to enjoy for years to come.
+              </p>
+            </div>
+            <div class="service-section__nav">
+              <button id="prevBtn" class="service-section__nav-arrow">‹</button>
+              <button
+                id="nextBtn"
+                class="service-section__nav-arrow service-section__nav-arrow--active"
+              >
+                ›
+              </button>
+            </div>
           </div>
-        </details>
 
-        <details class="accordion" open>
-          <summary class="accordion-item__summary">
-            <h3 class="accordion-item__title">We are collaborative</h3>
-             <span class="accordion-item__icon"></span>
-          </summary>
-          <div class="accordion__content">
-            <p>
-              We proudly work with museums, collectors, and private clients who trust us to preserve the integrity and beauty of their valuable items. From fine pigment restoration to hardware re-plating in gold, chrome, or silver, our work combines artistry and technical mastery.
+          <div class="service-section__main">
+            <div class="service-carousel">
+              <div class="service-carousel__track" id="carouselTrack"></div>
+            </div>
+
+            <article class="service-card">
+              <h2 class="service-card__title" id="cardTitle">Spa Service</h2>
+              <p class="service-card__desc" id="cardDesc">
+                Our Signature Spa Service renews handbags, wallets, and small
+                leather goods through deep cleaning, conditioning, and pigment
+                touch-ups.
+              </p>
+              <div class="service-card__price-info">
+                <h3 class="service-card__price-title">Estimation Price</h3>
+                <p class="service-card__price-row" id="priceSmall">
+                  $150–$250 Small Leather Goods
+                </p>
+                <p class="service-card__price-row" id="priceLarge">
+                  $250–$450 Handbag
+                </p>
+              </div>
+              <div class="service-btn reviews__button">
+                <a class="reviews__button-link">Claim 20% off</a>
+                <img src="./img/main/rightRow.svg" alt="rows icon" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="works section">
+        <div class="works__container">
+          <h2 class="works__title">How Leather Restoration Works</h2>
+
+          <div class="works__content">
+            <ol class="works__list" aria-label="Restoration steps">
+              <li class="works__item step-item">
+                <span class="step-item__number">1</span>
+                <div class="step-item__body">
+                  <h3 class="step-item__title">Claim your discount voucher</h3>
+                  <p class="step-item__text">
+                    Copy goes here. It will have better fit for two lines
+                  </p>
+                </div>
+              </li>
+
+              <li class="works__item step-item">
+                <span class="step-item__number">2</span>
+                <div class="step-item__body">
+                  <h3 class="step-item__title">
+                    Fill out the form to get a quote
+                  </h3>
+                  <p class="step-item__text">
+                    Your exclusive discount will be automatically applied
+                  </p>
+                </div>
+              </li>
+
+              <li class="works__item step-item">
+                <span class="step-item__number">3</span>
+                <div class="step-item__body">
+                  <h3 class="step-item__title">
+                    Schedule pickup or on-site service
+                  </h3>
+                  <p class="step-item__text">Free Pickup & Delivery</p>
+                </div>
+              </li>
+
+              <li class="works__item step-item">
+                <span class="step-item__number">4</span>
+                <div class="step-item__body">
+                  <h3 class="step-item__title">Enjoy a like-new piece</h3>
+                  <p class="step-item__text">
+                    Your leather good will serve you for many more years.
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="works__media">
+              <div class="works__image-wrapper">
+                <img
+                  src="./img/background.png"
+                  alt="Photo of our work"
+                  class="works__image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="included section">
+        <div class="included__container">
+          <div class="included__header">
+            <h2 class="included__title">What's Included?</h2>
+            <p class="included__subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
             </p>
           </div>
-        </details>
-      </div>
 
-      <div class="about__media">
-        <div class="about__img-wrapper">
-          <img src="./img/background.png" alt="OUR WORK" class="about__img">
-        </div>
-      </div>
+          <div class="included__content">
+            <article class="included__item included-card">
+              <div class="included-card__icon-wrapper">
+                <img src="./img/included/check.svg" alt="Checkmark" />
+              </div>
+              <div class="included-card__content">
+                <h3 class="included-card__title">Premium Materials</h3>
+                <p class="included-card__description">
+                  We use only high-quality Italian leather dyes, finishes, and
+                  restoration compounds for long-lasting results.
+                </p>
+              </div>
+            </article>
 
-    </div>
-  </div>
-</section>
+            <article class="included__item included-card">
+              <div class="included-card__icon-wrapper">
+                <img src="./img/included/check.svg" alt="Checkmark" />
+              </div>
+              <div class="included-card__content">
+                <h3 class="included-card__title">Craftsmanship Guarantee</h3>
+                <p class="included-card__description">
+                  Every restoration is performed with precision and care - 100%
+                  satisfaction or your money back.
+                </p>
+              </div>
+            </article>
 
-<section class="features section">
-  <div class="features__container">
+            <article class="included__item included-card">
+              <div class="included-card__icon-wrapper">
+                <img src="./img/included/check.svg" alt="Checkmark" />
+              </div>
+              <div class="included-card__content">
+                <h3 class="included-card__title">
+                  Structural & Hardware Repair
+                </h3>
+                <p class="included-card__description">
+                  Includes reinforcement of weakened areas, zipper and clasp
+                  repair, and restoration of gold, chrome, or silver coatings.
+                </p>
+              </div>
+            </article>
 
-    <div class="features_header">
-      <h2 class="features__title">Why Choose Us</h2>
-      <p class="features__subtitle">Copy line if needed. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+            <article class="included__item included-card">
+              <div class="included-card__icon-wrapper">
+                <img src="./img/included/check.svg" alt="Checkmark" />
+              </div>
+              <div class="included-card__content">
+                <h3 class="included-card__title">Color & Texture Matching</h3>
+                <p class="included-card__description">
+                  Custom pigment mixing to perfectly match the original tone,
+                  grain, and sheen of your leather item.
+                </p>
+              </div>
+            </article>
+            <article class="included__item included-card">
+              <div class="included-card__icon-wrapper">
+                <img src="./img/included/check.svg" alt="Checkmark" />
+              </div>
+              <div class="included-card__content">
+                <h3 class="included-card__title">Post-Service Conditioning</h3>
+                <p class="included-card__description">
+                  Each restored piece receives deep cleaning, conditioning, and
+                  protection for lasting beauty.
+                </p>
+              </div>
+            </article>
 
-    <div class="features__grid">
-      <article class="features__item">
-        <div class="features__icon-wrapper">
-          <img src="./img/Choose-Us/delivery.svg" alt="delivery">
-        </div>
-        <p class="features__text">Insured pickup and delivery for every project</p>
-      </article>
-
-      <article class="features__item">
-        <div class="features__icon-wrapper">
-          <img src="./img/Choose-Us/water.svg" alt="water">
-        </div>
-        <p class="features__text">Premium Italian materials and pigments only</p>
-      </article>
-
-      <article class="features__item">
-        <div class="features__icon-wrapper">
-          <img src="./img/Choose-Us/medal.svg" alt="medal">
-        </div>
-        <p class="features__text">Trusted by museums and private collectors</p>
-      </article>
-
-      <article class="features__item">
-        <div class="features__icon-wrapper">
-          <img src="./img/Choose-Us/sun.svg" alt="sun">
-        </div>
-        <p class="features__text">Sustainable alternative to replacement</p>
-      </article>
-
-      <article class="features__item">
-        <div class="features__icon-wrapper">
-          <img src="./img/Choose-Us/tag.svg" alt="tag">
-        </div>
-        <p class="features__text">Hardware & metal restoration (gold, chrome, silver)</p>
-      </article>
-
-      <article class="features__item">
-        <div class="features__icon-wrapper">
-          <img src="./img/Choose-Us/shield.svg" alt="shield">
-        </div>
-        <p class="features__text">Lorem ipsum dolor sit amet, consectetur</p>
-      </article>
-    </div>
-
-  </div>
-</section>
-
-<section class="check section">
-  <div class="check__container">
-    <div class="check__header">
-      <h2 class="check__title">Check availability by ZIP </h2>
-      <p class="check_subtitle">Instant check — no signup required.</p>
-    </div>
-
-    <form class="check__form" action="#" method="post" novalidate>
-        <label class="check__form-field" for="zip">
-          <span class="visually-hidden">ZIP code</span>
-          <input
-            class="check__form-input"
-            type="text"
-            id="zip"
-            name="zip"
-            inputmode="numeric"
-            autocomplete="postal-code"
-            placeholder="Enter your ZIP"
-            readonly
-          />
-        </label>
-
-        <!-- hodden file input -->
-           <input
-            class="check__form-file"
-            type="file"
-            id="zipFile"
-            name="zipFile"
-          />
-
-        <button class="check__form-btn" type="button">CHECK YOUR AREA</button>
-      </form>
-  </div>
-</section>
-
-<section class="faq section">
-  <div class="faq__container">
-
-    <div class="faq__header">
-      <h2 class="faq__title">FAQ</h2>
-      <p class="faq__subtitle">
-        Have a question? Check out our Frequently Asked Questions to get instant answers about how things work, what to expect, and where to find help.
-      </p>
-    </div>
-
-    <div class="faq__list">
-      
-      <details class="faq__item" open>
-        <summary class="faq__question">
-          What types of customers do you usually work with?
-        <span class="faq__icon"></span>
-        </summary>
-        <div class="faq__answer">
-          <p>
-            We serve private collectors, homeowners, museums, interior designers, and anyone who values craftsmanship and restoration over replacement. Our experience covers everything from luxury handbags and car interiors to antique furniture and decorative pieces
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item" close>
-        <summary class="faq__question">
-          What questions should I think about before contacting you?
-        <span class="faq__icon"></span>
-        </summary>
-        <div class="faq__answer">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
-        </div>
-      </details>
-
-      <details class="faq__item" close>
-        <summary class="faq__question">
-          What should customers know about your pricing?
-        <span class="faq__icon"></span>
-        </summary>
-        
-        <div class="faq__answer">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item" close>
-        <summary class="faq__question">
-          What is your typical process for working with a new customer?
-        <span class="faq__icon"></span>
-        </summary>
-        <div class="faq__answer">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item" close>
-        <summary class="faq__question">
-          What advice would you give to someone looking for a restoration provider?
-          <span class="faq__icon"></span>
-        </summary>
-        <div class="faq__answer">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item" close>
-        <summary class="faq__question">
-          What kind of training or experience do your artisans have?
-        <span class="faq__icon"></span>
-        </summary>
-        <div class="faq__answer">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item" close>
-        <summary class="faq__question">
-          Can you describe a recent project you're proud of?
-        <span class="faq__icon"></span>
-        </summary>
-        <div class="faq__answer">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item" close>
-        <summary class="faq__question">
-          How did your company get started?
-        <span class="faq__icon"></span>
-        </summary>
-        <div class="faq__answer">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit animi libero et minima nisi nulla quisquam numquam tempora laboriosam deserunt.          </p>
-          </p>
-        </div>
-      </details>
-    </div>
-
-    <div class="faq__footer">
-      <a href="#" class="faq__btn">send us a question</a>
-    </div>
-  </div>
-</section>
-
-<section class="blog section">
-  <div class="blog__container">
-    <div class="blog__header">
-      <h2 class="blog__title">Our Blog</h2>
-      <p class="blog__description">
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-
-    <div class="blog__content">
-      <!-- BIG POST -->
-      <article class="blog-card blog-card--large">
-        <div class="blog-card__image">
-          <span class="blog-card__tag">Garments</span>
-        </div>
-
-        <div class="blog-card__body">
-          <h3 class="blog-card__title">
-            Lorem ipsum dolor sit ametconse
-          </h3>
-          <p class="blog-card__text">
-            Sed do eiusmod tempor incididunt ut labore et dolore
-          </p>
-          <a href="#" class="blog-card__link blog-card__link--highlight">
-            Read More
-          </a>
-        </div>
-      </article>
-
-      <!-- SMALL POSTS -->
-      <div class="blog__list">
-        <article class="blog-card blog-card--horizontal">
-          <div class="blog-card__image">
-            <span class="blog-card__tag">Handbags</span>
+            <article class="included__item included-card">
+              <div class="included-card__icon-wrapper">
+                <img src="./img/included/check.svg" alt="Checkmark" />
+              </div>
+              <div class="included-card__content">
+                <h3 class="included-card__title">
+                  Pickup & Delivery Insurance
+                </h3>
+                <p class="included-card__description">
+                  Your item is fully insured from pickup to delivery - complete
+                  peace of mind throughout the process.
+                </p>
+              </div>
+            </article>
           </div>
+        </div>
+      </section>
 
-          <div class="blog-card__body">
-            <h3 class="blog-card__title">
-              Lorem ipsum dolor sit ametconse
-            </h3>
-            <p class="blog-card__text">
-              Sed do eiusmod tempor incididunt ut labore et dolore
+      <section class="stats section">
+        <div class="stats__container">
+          <div class="stats__header">
+            <h2 class="stats__title">Leather Gallery by the Numbers</h2>
+            <p class="stats__subtitle">
+              Powering progress through data and experience - real results,
+              proven impact, and measurable growth.
             </p>
-            <a href="#" class="blog-card__link">Read More</a>
-          </div>
-        </article>
-
-        <article class="blog-card blog-card--horizontal">
-          <div class="blog-card__image">
-            <span class="blog-card__tag">Furniture</span>
           </div>
 
-          <div class="blog-card__body">
-            <h3 class="blog-card__title">
-              Lorem ipsum dolor sit ametconse
-            </h3>
-            <p class="blog-card__text">
-              Sed do eiusmod tempor incididunt ut labore et dolore
+          <div class="stats__grid">
+            <div class="stats__item stat-card">
+              <div class="stat-card__value">
+                7 <span class="stat-card__symbol">+</span>
+              </div>
+              <p class="stat-card__label">Years in Repair Service</p>
+            </div>
+
+            <div class="stats__item stat-card">
+              <div class="stat-card__value">
+                5,2 <span class="stat-card__symbol">k+</span>
+              </div>
+              <p class="stat-card__label">Repaired Products</p>
+            </div>
+
+            <div class="stats__item stat-card">
+              <div class="stat-card__value">
+                <span class="stat-card__symbol">$</span>990,360
+              </div>
+              <p class="stat-card__label">
+                Repaired Leather Goods Market Value
+              </p>
+            </div>
+
+            <div class="stats__item stat-card">
+              <div class="stat-card__value">
+                4,8<span class="stat-card__symbol">k+</span>
+              </div>
+              <p class="stat-card__label">Customer Reviews</p>
+            </div>
+
+            <div class="stats__item stat-card">
+              <div class="stat-card__value">
+                150<span class="stat-card__symbol">+</span>
+              </div>
+              <p class="stat-card__label">Regular Customers</p>
+            </div>
+          </div>
+
+          <button class="stats__button">GET your personal discount</button>
+        </div>
+      </section>
+
+      <section class="featured section">
+        <div class="featured__container">
+          <h2 class="featured__title">Featured In</h2>
+
+          <div class="featured__track">
+            <div class="featured__item">
+              <img
+                src="./img/featured/business-insider.png"
+                alt="Business Insider"
+                class="featured__logo"
+              />
+            </div>
+            <div class="featured__item">
+              <img
+                src="./img/featured/cnbc.png"
+                alt="CNBC"
+                class="featured__logo"
+              />
+            </div>
+            <div class="featured__item">
+              <img
+                src="./img/featured/time.png"
+                alt="TIME"
+                class="featured__logo"
+              />
+            </div>
+            <div class="featured__item">
+              <img
+                src="/img/featured/angies-list.png"
+                alt="Angie's list"
+                class="featured__logo"
+              />
+            </div>
+            <div class="featured__item">
+              <img
+                src="./img/featured/wsj.png"
+                alt="WSJ"
+                class="featured__logo"
+              />
+            </div>
+            <div class="featured__item">
+              <img
+                src="./img/featured/forbes.png"
+                alt="Forbes"
+                class="featured__logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section">
+        <div class="about__container">
+          <div class="about__header">
+            <h2 class="about__title">About Us</h2>
+            <div class="about__rating">
+              <span class="about__starts">★★★★★</span>
+              <span class="about__score">4.8 (894 Ratings)</span>
+            </div>
+            <p class="about__subtitle">
+              Restoration is more than repair - it's an investment in what
+              lasts. Professional restoration not only saves thousands compared
+              to replacement but also preserves the originality, texture, and
+              history of your piece.
             </p>
-            <a href="#" class="blog-card__link">Read More</a>
           </div>
-        </article>
+
+          <div class="about__accordions-wrapper">
+            <div class="about__accordions">
+              <details class="accordion" open>
+                <summary class="accordion-item__summary">
+                  <h3 class="accordion-item__title">We are specialists</h3>
+                  <span class="accordion-item__icon"></span>
+                </summary>
+
+                <div class="accordion__content">
+                  <p>
+                    We are specialists in leather restoration, serving clients
+                    who value craftsmanship, precision, and authenticity. Using
+                    premium Italian materials and advanced restoration
+                    techniques, we bring life back to furniture, handbags, and
+                    collectible leather pieces. Each item is fully insured from
+                    pickup to delivery, ensuring total peace of mind.
+                  </p>
+                </div>
+              </details>
+
+              <details class="accordion" open>
+                <summary class="accordion-item__summary">
+                  <h3 class="accordion-item__title">
+                    We use exclusive techniques
+                  </h3>
+                  <span class="accordion-item__icon"></span>
+                </summary>
+                <div class="accordion__content">
+                  <p>
+                    Our exclusive Spa Service renews handbags, wallets, and
+                    small leather goods through deep cleaning, conditioning,
+                    gentle hardware polishing, and pigment touch-ups that
+                    refresh color and conceal wear.
+                  </p>
+                </div>
+              </details>
+
+              <details class="accordion" open>
+                <summary class="accordion-item__summary">
+                  <h3 class="accordion-item__title">We are collaborative</h3>
+                  <span class="accordion-item__icon"></span>
+                </summary>
+                <div class="accordion__content">
+                  <p>
+                    We proudly work with museums, collectors, and private
+                    clients who trust us to preserve the integrity and beauty of
+                    their valuable items. From fine pigment restoration to
+                    hardware re-plating in gold, chrome, or silver, our work
+                    combines artistry and technical mastery.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            <div class="about__media">
+              <div class="about__img-wrapper">
+                <img
+                  src="./img/background.png"
+                  alt="OUR WORK"
+                  class="about__img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section">
+        <div class="features__container">
+          <div class="features_header">
+            <h2 class="features__title">Why Choose Us</h2>
+            <p class="features__subtitle">
+              Copy line if needed. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </div>
+
+          <div class="features__grid">
+            <article class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="./img/Choose-Us/delivery.svg" alt="delivery" />
+              </div>
+              <p class="features__text">
+                Insured pickup and delivery for every project
+              </p>
+            </article>
+
+            <article class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="./img/Choose-Us/water.svg" alt="water" />
+              </div>
+              <p class="features__text">
+                Premium Italian materials and pigments only
+              </p>
+            </article>
+
+            <article class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="./img/Choose-Us/medal.svg" alt="medal" />
+              </div>
+              <p class="features__text">
+                Trusted by museums and private collectors
+              </p>
+            </article>
+
+            <article class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="./img/Choose-Us/sun.svg" alt="sun" />
+              </div>
+              <p class="features__text">
+                Sustainable alternative to replacement
+              </p>
+            </article>
+
+            <article class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="./img/Choose-Us/tag.svg" alt="tag" />
+              </div>
+              <p class="features__text">
+                Hardware & metal restoration (gold, chrome, silver)
+              </p>
+            </article>
+
+            <article class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="./img/Choose-Us/shield.svg" alt="shield" />
+              </div>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet, consectetur
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="check section">
+        <div class="check__container">
+          <div class="check__header">
+            <h2 class="check__title">Check availability by ZIP</h2>
+            <p class="check_subtitle">Instant check — no signup required.</p>
+          </div>
+
+          <form class="check__form" action="#" method="post" novalidate>
+            <label class="check__form-field" for="zip">
+              <span class="visually-hidden">ZIP code</span>
+              <input
+                class="check__form-input"
+                type="text"
+                id="zip"
+                name="zip"
+                inputmode="numeric"
+                autocomplete="postal-code"
+                placeholder="Enter your ZIP"
+                readonly
+              />
+            </label>
+
+            <!-- hodden file input -->
+            <input
+              class="check__form-file"
+              type="file"
+              id="zipFile"
+              name="zipFile"
+            />
+
+            <button class="check__form-btn" type="button">
+              CHECK YOUR AREA
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq section">
+        <div class="faq__container">
+          <div class="faq__header">
+            <h2 class="faq__title">FAQ</h2>
+            <p class="faq__subtitle">
+              Have a question? Check out our Frequently Asked Questions to get
+              instant answers about how things work, what to expect, and where
+              to find help.
+            </p>
+          </div>
+
+          <div class="faq__list">
+            <details class="faq__item" open>
+              <summary class="faq__question">
+                What types of customers do you usually work with?
+                <span class="faq__icon"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  We serve private collectors, homeowners, museums, interior
+                  designers, and anyone who values craftsmanship and restoration
+                  over replacement. Our experience covers everything from luxury
+                  handbags and car interiors to antique furniture and decorative
+                  pieces
+                </p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                What questions should I think about before contacting you?
+                <span class="faq__icon"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit animi libero et minima nisi nulla quisquam numquam
+                  tempora laboriosam deserunt.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                What should customers know about your pricing?
+                <span class="faq__icon"></span>
+              </summary>
+
+              <div class="faq__answer">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit animi libero et minima nisi nulla quisquam numquam
+                  tempora laboriosam deserunt.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                What is your typical process for working with a new customer?
+                <span class="faq__icon"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit animi libero et minima nisi nulla quisquam numquam
+                  tempora laboriosam deserunt.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                What advice would you give to someone looking for a restoration
+                provider?
+                <span class="faq__icon"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit animi libero et minima nisi nulla quisquam numquam
+                  tempora laboriosam deserunt.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                What kind of training or experience do your artisans have?
+                <span class="faq__icon"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit animi libero et minima nisi nulla quisquam numquam
+                  tempora laboriosam deserunt.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                Can you describe a recent project you're proud of?
+                <span class="faq__icon"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit animi libero et minima nisi nulla quisquam numquam
+                  tempora laboriosam deserunt.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__question">
+                How did your company get started?
+                <span class="faq__icon"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit animi libero et minima nisi nulla quisquam numquam
+                  tempora laboriosam deserunt.
+                </p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq__footer">
+            <a href="#" class="faq__btn">send us a question</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog section">
+        <div class="blog__container">
+          <div class="blog__header">
+            <h2 class="blog__title">Our Blog</h2>
+            <p class="blog__description">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="blog__content">
+            <!-- BIG POST -->
+            <article class="blog-card blog-card--large">
+              <div class="blog-card__image">
+                <span class="blog-card__tag">Garments</span>
+              </div>
+
+              <div class="blog-card__body">
+                <h3 class="blog-card__title">
+                  Lorem ipsum dolor sit ametconse
+                </h3>
+                <p class="blog-card__text">
+                  Sed do eiusmod tempor incididunt ut labore et dolore
+                </p>
+                <a href="#" class="blog-card__link blog-card__link--highlight">
+                  Read More
+                </a>
+              </div>
+            </article>
+
+            <!-- SMALL POSTS -->
+            <div class="blog__list">
+              <article class="blog-card blog-card--horizontal">
+                <div class="blog-card__image">
+                  <span class="blog-card__tag">Handbags</span>
+                </div>
+
+                <div class="blog-card__body">
+                  <h3 class="blog-card__title">
+                    Lorem ipsum dolor sit ametconse
+                  </h3>
+                  <p class="blog-card__text">
+                    Sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="blog-card__link">Read More</a>
+                </div>
+              </article>
+
+              <article class="blog-card blog-card--horizontal">
+                <div class="blog-card__image">
+                  <span class="blog-card__tag">Furniture</span>
+                </div>
+
+                <div class="blog-card__body">
+                  <h3 class="blog-card__title">
+                    Lorem ipsum dolor sit ametconse
+                  </h3>
+                  <p class="blog-card__text">
+                    Sed do eiusmod tempor incididunt ut labore et dolore
+                  </p>
+                  <a href="#" class="blog-card__link">Read More</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="reviews__button blog__footer">
+            <a class="reviews__button-link">read more from blog</a>
+            <img src="./img/main/rightRow.svg" alt="rows icon" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer__container">
+        <h2 class="footer__logo">Company Name</h2>
+
+        <div class="footer__content">
+          <div class="footer__column footer__column--bio">
+            <h3 class="footer__title">Bio</h3>
+            <p class="footer__text">
+              Premium leather & vinyl furniture repair - color & finish
+              restoration, reshape, cleaning, and tear repairs.
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Get a Quote</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Handbags</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Garments</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Furniture</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Other Leather Goods</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Get in Touch</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="mailto:info@example.com" class="footer__link"
+                  >Email goes here</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="tel:+123456789" class="footer__link"
+                  >Phone number goes here</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Opportunity for Artists</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Support</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us Bot</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Warranty & Maintenance</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © 2025 Leather Repair Studio. All Rights Reserved.
+          </p>
+          <div class="footer__legal">
+            <a href="#" class="footer__legal-link">Privacy Policy</a>
+            <a href="#" class="footer__legal-link">Terms of Service</a>
+            <a href="#" class="footer__legal-link">Cookie Policy</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="reviews__button blog__footer">
-        <a class="reviews__button-link">read more from blog</a>
-        <img src="./img/main/rightRow.svg" alt="rows icon">
-    </div>
-
-    
-  </div>
-</section>
-
-
-</main>
-
-<footer class="footer section">
-  <div class="footer__container">
-    <h2 class="footer__logo">Company Name</h2>
-
-    <div class="footer__content">
-      <div class="footer__column footer__column--bio">
-        <h3 class="footer__title">Bio</h3>
-        <p class="footer__text">
-          Premium leather & vinyl furniture repair - color & finish restoration, reshape, cleaning, and tear repairs.
-        </p>
-      </div>
-
-      <div class="footer__column">
-        <h3 class="footer__title">Get a Quote</h3>
-        <ul class="footer__list">
-          <li class="footer__item"><a href="#" class="footer__link">Handbags</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Garments</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Furniture</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Other Leather Goods</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__column">
-        <h3 class="footer__title">Get in Touch</h3>
-        <ul class="footer__list">
-          <li class="footer__item"><a href="mailto:info@example.com" class="footer__link">Email goes here</a></li>
-          <li class="footer__item"><a href="tel:+123456789" class="footer__link">Phone number goes here</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Opportunity for Artists</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__column">
-        <h3 class="footer__title">Support</h3>
-        <ul class="footer__list">
-          <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Contact Us Bot</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Warranty & Maintenance</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <p class="footer__copyright">© 2025 Leather Repair Studio. All Rights Reserved.</p>
-      <div class="footer__legal">
-        <a href="#" class="footer__legal-link">Privacy Policy</a>
-        <a href="#" class="footer__legal-link">Terms of Service</a>
-        <a href="#" class="footer__legal-link">Cookie Policy</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+    </footer>
 
     <script src="./input-btn.js"></script>
     <script src="./burger.js"></script>
 
     <script src="./servises_carusel.js"></script>
-
-</body>
+  </body>
 </html>

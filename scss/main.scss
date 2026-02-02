@@ -2,10 +2,13 @@
 
 @import './base';
 
+@import './components/section';
+@import './components/container';
 @import './components/header';
 @import './components/hero';
 @import './components/partner_section';
 @import './components/craft-section';
+@import './components/reviews-section';
 
 @import './utils/utils';
 
@@ -24,167 +27,6 @@
   --form-grey: rgba(239, 239, 239, 1);
   --background-grey:rgba(251, 251, 251, 1);
   --transition-main: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-
-/* === PARTNER SECTION === */
-
-/* === CRAFT SECTION === */
-
-
-
-/* === REVIEWS  SECTION ===*/
-
-.reviews {
-  padding: 60px 0;
-}
-
-.reviews__header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 60px;
-}
-
-.reviews__title {
-font-size: 48px;
-font-weight: 600;
-  margin-bottom: 16px;
-}
-
-.reviews__rating {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.reviews__score {
-font-size: 32px;
-font-weight: 800;
-}
-
-.reviews__stars {
-  color: var(--accent-orange);
-  letter-spacing: 2px;
-}
-
-.reviews__count {
-  color: var(--text-gray);
-  font-size: 18px;
-}
-
-.reviews__verified {
-  background: var(--background-grey);
-  padding: 20px;
-  border-radius: 16px;
-  border: 1px solid var(--form-grey);
-}
-.reviews__verified-icon{
-  margin-bottom: 22px;
-}
-
-
-.reviews__verified-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.reviews__verified-text {
-  font-size: 14px;
-  color: var(--text-gray);
-  line-height: 1.5;
-}
-
-/* === LIST === */
-.reviews__list {
-  display: flex;
-  margin: 0 0 60px;
-}
-
-
-
-/* === CARD  ====*/
-
-.review-card:not(:last-child){
-  border-right: 1px solid var(--form-grey);
-  padding-right: 20px;
-}
-.review-card:not(:first-child){
-  padding-left: 20px;
-}
-
-.review-card__header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.review-card__avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: #f8f9ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.review-card__name {
-  display: block;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.review-card__location {
-  font-size: 14px;
-  color: var(--text-gray);
-}
-
-.review-card__rating {
-  color: var(--accent-orange);
-  margin-bottom: 12px;
-}
-
-.review-card__text {
- font-size: 16px;
-  line-height: 1.6;
-  color: var(--text-gray);
-  margin-bottom: 12px;
-}
-
-.review-card__date {
-  font-size: 14px;
-   color: var(--text-gray);
-  
-  display: flex;
-  justify-content: right;
-}
-
-/* === BUTTON === */
-.reviews__button {
-  display: flex;
-  justify-content: center;
-  /* width: 100%; */
-  max-width: 286px;
-  gap: 11px;
-  background: var(--main-dark);
-  color: var(--main-white);
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  /* padding: 10px 60px; */
-  align-items: center;
-}
-
-.reviews__button-link{
-  padding: 14px 0;
 }
 
 
@@ -557,8 +399,7 @@ font-weight: 800;
   gap: 30px;
   margin-bottom: 60px;
 }
-.stats__item {
-}
+
 .stat-card {
   flex: 1;
   padding-left: 24px;
@@ -603,8 +444,6 @@ font-weight: 800;
 
 /* === FEATURED SECTION  === */
 
-.featured {
-}
 
 .featured__title {
   font-size: 48px;
@@ -640,11 +479,7 @@ font-weight: 800;
 
 /* === ABOUT SECTION === */
 
-.about {
-}
 
-.about__container {
-}
 .about__header {
   max-width: 512px;
   margin-bottom: 60px;
@@ -850,10 +685,7 @@ font-weight: 800;
 
 
 /* check form */
-.check {
-}
-.section {
-}
+
 .check__container {
   border: 1px solid var(--form-grey);
   border-radius: 10px;
@@ -944,8 +776,7 @@ font-weight: 800;
 
 /* === FAQ   SECTION === */
 
-.faq {
-}
+
 
 .faq__header {
   display: flex;
@@ -1019,8 +850,7 @@ font-weight: 800;
   padding-bottom: 30px;
   color: var(--text-gray);
 }
-.faq__footer {
-}
+
 .faq__btn {
   background-color: var(--accent-orange);
   color: var(--main-white);

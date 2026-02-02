@@ -1,7 +1,7 @@
 .hero {
   padding-top: 108px;
   padding-bottom: 58px;
-  background-image: url('../img/main/main.webp'); 
+  background-image: url("../img/main/main.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -14,7 +14,7 @@
   &__top {
     display: flex;
     justify-content: flex-start;
-    align-items: center; 
+    align-items: center;
     width: 100%;
     max-height: 500px;
     gap: 53px;
@@ -24,7 +24,7 @@
   &__badge {
     display: flex;
     align-items: center;
-    gap: 5px; 
+    gap: 5px;
 
     &-icon {
       padding: 9px;
@@ -54,7 +54,8 @@
 
   &__avatar {
     &:not(:first-child) {
-      margin-left: -17px; 
+      margin-left: -17px;
+    }
     &-img {
       width: 48px;
       height: 48px;
@@ -65,7 +66,7 @@
     }
   }
 
-  &__social-info { 
+  &__social-info {
     display: flex;
     flex-direction: column;
   }
@@ -127,8 +128,6 @@
   }
 }
 
-}
-
 .zip-form {
   display: flex;
   align-items: center;
@@ -143,10 +142,9 @@
 
   &__field {
     flex: 1;
-    display: flex; 
+    display: flex;
     align-items: center;
   }
-
 
   &__file {
     position: absolute;
@@ -164,7 +162,7 @@
     width: 100%;
     font-size: 16px;
     padding: 10px 5px;
-    border: none; 
+    border: none;
     background-color: transparent;
 
     &:focus {
@@ -183,18 +181,20 @@
   &__btn {
     padding: 14px 30px;
     background-color: var(--accent-orange);
-    color: var(--main-white); 
+    color: var(--main-white);
     border-radius: 50px;
-    border: none; 
+    border: none;
     font-weight: 600;
     line-height: 21px;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease;
 
     &:hover {
-      filter: brightness(1.1); 
+      filter: brightness(1.1);
     }
 
     &:active {

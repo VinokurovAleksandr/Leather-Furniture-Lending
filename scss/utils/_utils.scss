@@ -10,9 +10,7 @@ body {
   margin: 0;
 }
 
-.section{
-  padding: 60px 0;
-}
+
 .visually-hidden{
     position: absolute !important;
     left: -10000px;
@@ -22,9 +20,3 @@ body {
     overflow: hidden;
 }
 
-[class*="__container"] {
-  /* width: 100%; */
-  max-width: 1072px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
