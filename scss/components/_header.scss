@@ -14,12 +14,14 @@
   &__nav {
     display: flex;
     align-items: center;
+    gap: 85px;
   }
 
-  &__list {
+  &__menu {
     display: flex;
-    gap: 120px;
-    justify-content: center;
+    
+    // gap: 120px;
+    justify-content: space-between;
     flex-grow: 1;
     color: var(--text-gray);
   }
@@ -43,3 +45,4 @@
     display: none;
   }
 }
+

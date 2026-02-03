@@ -16,11 +16,20 @@
   max-width: 512px;
 }
 
-.craft__grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.craft__grid {
+  display: flex;
+  flex-wrap: wrap; 
   gap: 30px;
 }
+
+.craft__grid > * {
+  /* Розрахунок: 50% ширини мінус половина gap (30px / 2 = 15px) */
+  flex: 1 1 calc(50% - 15px);
+  
+  /* Мінімальна ширина, щоб на мобільних вони стали в один ряд */
+  min-width: 300px; 
+}
+
 .craft-showcase{
   position: relative;
 }

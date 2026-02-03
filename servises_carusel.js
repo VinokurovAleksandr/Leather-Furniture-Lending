@@ -43,7 +43,7 @@ function render() {
     // 4-й елемент (index 3) — активний (Spa Service на старті)
     const isBig = index === 3; 
     
-    div.className = `circle-item ${isBig ? 'circle-item--big' : 'circle-item--small'}`;
+    div.className = `circle-item ${isBig ? 'circle-item-big' : 'circle-item-small'}`;
     div.style.backgroundImage = `url(${item.img})`;
     div.innerHTML = `<span>${item.title}</span>`;
     

@@ -1,0 +1,68 @@
+/* === WORKS SRCTION */
+.works {
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__list {
+    flex: 1;
+    /* gap: 30px; */
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  &__media {
+    flex: 1;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+    &-wrapper {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 15px;
+      background-color: var(--background-grey);
+    }
+  }
+}
+
+.step-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent-orange);
+    background-color: var(--badge-orange);
+    border-radius: 50%;
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: var(--text-gray);
+  }
+}
