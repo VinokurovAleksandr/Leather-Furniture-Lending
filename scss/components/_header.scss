@@ -1,5 +1,5 @@
 .header {
-
+  
   &__banner {
     background-color: var(--accent-orange);
     color: var(--main-white);
@@ -8,6 +8,16 @@
     font-weight: 600;
     text-align: center;
     padding: 10px 0;
+
+   
+  }
+
+  &__logo{
+
+
+    @media screen and (max-width: $bp-tablet) {
+    display: none;
+    }
   }
 
 
@@ -19,30 +29,52 @@
 
   &__menu {
     display: flex;
-    
-    // gap: 120px;
     justify-content: space-between;
     flex-grow: 1;
     color: var(--text-gray);
-  }
 
-
-  &__link {
-    font-size: 10px;
-    color: var(--text-gray);
-    transition: font-weight 0.2s ease; 
-
-    &:hover,
-    &:focus {
-      font-weight: 700;
-      cursor: pointer;
-      outline: none; 
+     @media screen and (max-width: $bp-tablet) {
+    margin: 10px 0;
     }
   }
 
 
-  &__burger {
+   &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 10px;
+    color: var(--text-gray);
+    text-decoration: none;
+    outline: none;
+
+    &:hover,
+    &:focus-visible {
+      font-weight: 700;
+    
+
+      .header__icon {
+        border: 1px solid var(--form-grey);
+        fill: var(--accent-orange);
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--background-grey);
+    border: 1px solid transparent;
+    // color: var(--text-gray); // ключове
+    transition: border 0.25s ease, color 0.25s ease;
+
+    @media screen and (min-width: $bp-tablet) {
     display: none;
+    }
   }
 }
-

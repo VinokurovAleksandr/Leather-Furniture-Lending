@@ -1,0 +1,18 @@
+
+:root {
+  --main-white: #ffffff;
+  --main-dark:  #161515;
+  --text-gray: rgba(87, 85, 85, 1);
+  --accent-orange: #f07030;
+  --Secondary-Text-Grey: #747272;
+  --badge-orange: #fdf1ea;
+  --form-grey: rgba(239, 239, 239, 1);
+  --background-grey:rgba(251, 251, 251, 1);
+  --transition-main: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 780px;
+$bp-pc: 1100px;
