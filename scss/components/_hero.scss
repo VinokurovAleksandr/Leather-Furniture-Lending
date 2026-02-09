@@ -6,10 +6,17 @@
   background-size: cover;
   background-position: center;
 
+  @media screen and (max-width: $bp-tablet) {
+   background-image: 
+    linear-gradient(156.25deg, rgba(30, 30, 30, 0) 10.53%, rgba(30, 30, 30, 1) 100%), 
+    url("../img/main/main-mobile.webp");
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
   }
+
 
   &__top {
     display: flex;
@@ -19,12 +26,22 @@
     max-height: 500px;
     gap: 53px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: contents;
+    }
   }
 
   &__badge {
     display: flex;
     align-items: center;
     gap: 5px;
+    
+
+    @media screen and (max-width: $bp-tablet) {
+      order: 1;
+      margin-bottom: 20px;
+    }
 
     &-icon {
       padding: 9px;
@@ -39,6 +56,12 @@
       padding: 8px 10px;
       border-radius: 50px;
       background-color: var(--badge-orange);
+
+      @media screen and (max-width: $bp-tablet) {
+      font-size: 12px;
+    
+      
+    }
     }
   }
 
@@ -46,6 +69,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    order: 6;
+
+    @media screen and (max-width: $bp-tablet) {
+      order: 6; 
+      display: flex;
+    }
+    
   }
 
   &__avatars {
@@ -76,16 +106,30 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 21px;
+
+    @media screen and (max-width: $bp-tablet) {
+      color: var(--main-white);
+    }
   }
 
   &__social-label {
     font-size: 14px;
     line-height: 1.5;
+    
+    @media screen and (max-width: $bp-tablet) {
+      color: var(--main-white);
+    }
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 500px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: contents;
+    }
   }
 
   &__title {
@@ -93,6 +137,15 @@
     font-weight: 600;
     line-height: 58px;
     margin-bottom: 5px;
+   
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 32px; 
+      line-height: 1.2;
+      order: 2;
+      margin-bottom: 10px;
+      color: var(--main-white);
+    }
 
   }
 
@@ -101,13 +154,25 @@
     line-height: 22px;
     color: var(--text-gray);
     margin-bottom: 90px;
+
+    @media screen and (max-width: $bp-tablet) {
+     order: 3;
+      color: var(--main-white);
+    } 
   }
 
   &__perks {
     display: flex;
     width: 100%;
     max-width: 500px;
-    gap: 20px; // Додав відступ між перками
+    gap: 20px;
+
+    @media screen and (max-width: $bp-tablet) {
+      // flex-direction: column;
+      gap: 15px;
+      order: 5;
+      margin-bottom: 40px;
+    }
   }
 
   &__perk {
@@ -125,6 +190,11 @@
     &-text {
       font-size: 14px;
       color: var(--text-gray);
+
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 12px;
+         color: var(--main-white);
+    }
     }
   }
 }
@@ -140,6 +210,11 @@
   padding: 5px 5px 5px 30px;
   gap: 3px;
   margin-bottom: 15px;
+
+  @media screen and (max-width: $bp-tablet) {
+     order: 4;
+    }
+
 
   &__field {
     flex: 1;
@@ -193,6 +268,10 @@
     transition:
       transform 0.2s ease,
       background-color 0.2s ease;
+
+       @media screen and (max-width: $bp-tablet) {
+     background-color: var(--main-dark);
+    }
 
     &:hover {
       filter: brightness(1.1);

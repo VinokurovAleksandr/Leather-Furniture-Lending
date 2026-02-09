@@ -3,4 +3,9 @@
   max-width: 1072px;
   margin: 0 auto;
   padding: 0 24px;
+
+    @media screen and (max-width: $bp-tablet) {
+        padding: 0 30px;
+    }
+
 }
