@@ -6,12 +6,21 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 60px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__title {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 16px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 25px;
+    }
   }
 
   &__rating {
@@ -34,6 +43,10 @@
   &__count {
     color: var(--text-gray);
     font-size: 18px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+    }
   }
 
   &__verified {
@@ -41,6 +54,10 @@
     padding: 20px;
     border-radius: 16px;
     border: 1px solid var(--form-grey);
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 15px;
+    }
 
     &-icon {
       margin-bottom: 22px;
@@ -50,18 +67,31 @@
       font-size: 32px;
       font-weight: 600;
       margin-bottom: 15px;
+
+      @media screen and (max-width: $bp-tablet) {
+      font-size: 20px;
+    }
     }
 
     &-text {
       font-size: 14px;
       color: var(--text-gray);
       line-height: 1.5;
+
+      @media screen and (max-width: $bp-tablet) {
+      font-size: 14px;
+    }
     }
   }
 
   &__list {
     display: flex;
     margin: 0 0 60px;
+
+    @media screen and (max-width: $bp-tablet) {
+     display: flex;
+     flex-direction: column;
+    }
   }
 
   &__button {
@@ -79,6 +109,13 @@
     cursor: pointer;
     align-items: center;
 
+    @media screen and (max-width: $bp-tablet) {
+      max-width: 100%;
+      background: transparent;
+      color: var(--main-dark);
+      border: 1px solid var(--main-dark);
+    }
+
     &:hover {
       background: var(--accent-orange);
     }
@@ -93,12 +130,28 @@
 
 .review-card {
   &:not(:last-child) {
-    border-right: 1px solid var(--form-grey);
+      border-right: 1px solid var(--form-grey);
     padding-right: 20px;
+
+     @media screen and (max-width: $bp-pc) {
+      border-right: none;
+     padding-right: 0;
+      
+    }
+    @media screen and (max-width: $bp-tablet) {
+      border-bottom: 1px solid var(--form-grey);
+      padding-bottom: 15px;
+    }
+    
   }
 
   &:not(:first-child) {
     padding-left: 20px;
+
+    @media screen and (max-width: $bp-pc) {
+      padding-left: 0;
+      padding-top: 15px;
+    }
   }
 
   &__header {
