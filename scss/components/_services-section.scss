@@ -157,3 +157,124 @@
 .circle-item-big::after {
   opacity: 0;
 }
+
+@media (max-width: $bp-tablet) {
+  .service {
+    padding: 40px 0; 
+    &__header {
+      flex-direction: column;
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+
+    &__title {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: var(--main-dark); 
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      max-width: 100%;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__mobile-hint {
+      display: inline-block;
+      background: #FFF0E9;
+      color: var(--accent-orange);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 0 20px 20px;
+      text-transform: uppercase;
+    }
+
+    &__main {
+      flex-direction: column;
+      min-height: auto;
+      align-items: center;
+      display: block; 
+    }
+  }
+
+  .service-carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 0 40px 0; 
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none; 
+    }
+
+    &__track {
+      display: flex;
+      gap: 20px;
+      padding: 0 20px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: auto;
+    }
+  }
+
+  .circle-item-small, 
+  .circle-item-big {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    margin: 0 !important;
+    position: relative;
+    border-radius: 50%;
+
+    span {
+      position: absolute;
+      top: 110px; 
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--main-dark);
+      width: 120px; 
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.2;
+      font-weight: 500;
+      white-space: normal; 
+      z-index: 5;
+    }
+    
+    &::after {
+      display: none; 
+    }
+  }
+
+  .service-card {
+    width: calc(100% - 40px);
+    margin: 20px;
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    z-index: 10;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 30px;
+      width: 20px;
+      height: 20px;
+      background: var(--background-grey);
+      transform: rotate(45deg);
+      z-index: -1;
+    }
+    
+    &__title { font-size: 24px; }
+    &__price-title { font-size: 20px; }
+  }
+}
