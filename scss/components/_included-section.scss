@@ -12,9 +12,15 @@
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 10px;
+   @media screen and (max-width: $bp-tablet) {
+      font-size: 25px;
+    }
 }
     &__subtitle {
   color: var(--text-gray);
+  @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+    }
 }
     &__content {
   border: 1px solid var(--form-grey);
@@ -26,6 +32,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+
+  @media screen and (max-width: $bp-tablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 }
 }
 
@@ -49,9 +59,19 @@
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 15px;
+
+  @media screen and (max-width: $bp-tablet) {
+      font-size: 20px;
+      letter-spacing: -2%;
+    }
 }
   &__description {
   color: var(--text-gray);
+
+   @media screen and (max-width: $bp-tablet) {
+      font-size: 14px;
+     
+    }
 }
   
 }

@@ -1,0 +1,111 @@
+.footer {
+  background-color: var(--main-dark);
+  color: var(--main-white);
+  font-family: var(--font-family);
+
+  &__contauner {
+    @media screen and (max-width: $bp-tablet) {
+        display: flex;
+    flex-direction: column;
+    }
+  }
+
+  &__logo {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: $bp-pc) {
+      font-size: 32px;
+      letter-spacing: -2%;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 60px;
+     @media screen and (max-width: $bp-tablet) {
+        display: flex;
+    flex-direction: column;
+    }
+
+  }
+  &__column {
+    flex: 1;
+    min-width: 200px;
+  }
+  &__column {
+    &--bio {
+      flex: 1.5;
+      padding-right: 40px;
+    }
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 14px;
+      letter-spacing: -2%;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--background-grey);
+    opacity: 0.7;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    margin-bottom: 12px;
+  }
+  &__link {
+    color: var(--background-grey);
+    opacity: 0.7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--main-white);
+      opacity: 1;
+    }
+  }
+  &__bottom {
+    border-top: 1px solid var(--background-grey);
+    padding-top: 30px;
+  }
+  &__copyright {
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  &__legal {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    &-link {
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--Secondary-Text-Grey);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--main-white);
+        opacity: 1;
+      }
+      &:focus {
+        color: var(--main-white);
+        opacity: 1;
+      }
+    }
+  }
+}

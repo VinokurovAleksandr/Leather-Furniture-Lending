@@ -1,0 +1,41 @@
+.featured {
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 25px;
+      
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+      filter: none;
+    }
+  }
+}

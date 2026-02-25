@@ -1,0 +1,123 @@
+.faq {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    max-width: 512px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+     @media screen and (max-width: $bp-tablet) { 
+        font-size: 25px;
+       }
+  }
+
+  &__subtitle {
+    color: var(--text-gray);
+    @media screen and (max-width: $bp-tablet) { 
+        font-size: 16px;
+       }
+  }
+
+  &__list {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--form-grey);
+
+    // Стан відкритого елемента для іконки
+    &[open] .faq__icon {
+      transform: rotate(180deg);
+    }
+
+
+    &:first-child .faq__question {
+      padding-top: 0px;
+    }
+  }
+
+  &__question {
+    cursor: pointer;
+    padding: 32px 0 32px 0;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (max-width: $bp-tablet) { 
+        font-size: 20px;
+       }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid var(--main-dark);
+      border-bottom: 2px solid var(--main-dark);
+      transform: rotate(45deg);
+    }
+  }
+
+  &__answer {
+    padding-right: 200px;
+    padding-bottom: 30px;
+    color: var(--text-gray);
+
+    @media screen and (max-width: $bp-tablet) { 
+         padding-right: 0;
+         font-size: 16px;
+       }
+  }
+
+  &__footer{
+
+     @media screen and (max-width: $bp-tablet) { 
+          display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+   
+  }
+
+  &__btn {
+    background-color: var(--accent-orange);
+    color: var(--main-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 60px;
+    border-radius: 50px;
+    transition: opacity 0.3s ease;
+
+    @media screen and (max-width: $bp-tablet) { 
+         background-color: var(--main-dark);
+       }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

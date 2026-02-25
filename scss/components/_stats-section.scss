@@ -2,10 +2,16 @@
 
     &__grid {
     display: flex;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
     margin-bottom: 60px;
+
+    @media screen and (max-width: $bp-tablet) {
+     flex-direction: column;
+      margin-bottom: 30px;
+     
+    }
   }
 
   &__header {
@@ -16,9 +22,16 @@
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 15px;
+
+     @media screen and (max-width: $bp-tablet) {
+      font-size: 25px;
+      letter-spacing: -2%
+     
+    }
   }
   &__subtitle {
     color: var(--text-gray);
+     font-size: 16px;
   }
 
   &__button {
@@ -36,6 +49,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+
+      @media screen and (max-width: $bp-tablet) {
+        background-color: var(--main-dark);
+     
+    }
   }
 }
 
@@ -43,12 +61,23 @@
   flex: 1;
   padding-left: 24px;
   border-left: 1px solid var(--form-grey);
+
+    @media screen and (max-width: $bp-tablet) {
+        border-left: none;
+        border-bottom: 1px solid var(--form-grey);
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
   
   &__value {
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 15px;
+
+    @media screen and (max-width: $bp-tablet) {
+     font-size: 32px
+    }
   }
 
   &:first-child {
@@ -60,5 +89,8 @@
   }
   &__label {
     color: var(--text-gray);
+    @media screen and (max-width: $bp-tablet) {
+     font-size: 16px
+    }
   }
 }

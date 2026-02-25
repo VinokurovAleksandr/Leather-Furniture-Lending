@@ -4,16 +4,28 @@
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 60px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 25px;
+      letter-spacing: -2%;
+    }
+    
   }
   &__content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 30px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      
+    }
   }
   &__list {
     flex: 1;
-    /* gap: 30px; */
   }
   &__item {
     display: flex;
@@ -61,8 +73,16 @@
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+        @media screen and (max-width: $bp-tablet) {
+          font-size: 20px;
+      
+    }
   }
   &__text {
     color: var(--text-gray);
+    @media screen and (max-width: $bp-tablet) {
+          font-size: 14px;
+      
+    }
   }
 }

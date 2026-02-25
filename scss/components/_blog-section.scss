@@ -1,0 +1,181 @@
+.blog {
+  &__header {
+    max-width: 500px;
+    margin-bottom: 60px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+     @media screen and (max-width: $bp-tablet) { 
+        font-size: 25px;  
+    }
+  }
+
+  &__description {
+    color: var(--text-gray);
+    @media screen and (max-width: $bp-tablet) { 
+        font-size: 16px;  
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+     @media screen and (max-width: $bp-tablet) { 
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media screen and (max-width: $bp-tablet) {
+      gap: 0;
+    }
+  }
+
+  &__footer {
+    margin-top: 48px;
+    @media screen and (max-width: $bp-tablet) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+/* === BLOG CARD === */
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: row !important; // Всі картки стають горизонтальними
+    gap: 15px !important;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--form-grey);
+    
+    // Скидаємо стилі зображення для всіх карток на мобільці
+    .blog-card__image {
+      width: 150px !important;;
+      min-height: 150px !important;;
+      height: 150px;
+      flex-shrink: 0;
+    }
+
+    .blog-card__body {
+      padding-top: 0 !important;
+    }
+
+    .blog-card__title {
+      font-size: 18px; 
+    }
+
+    .blog-card__text {
+        font-size: 14px;
+    }
+    
+    .blog-card__link {
+       align-self: flex-end; // Кнопка READ MORE під текстом
+    }
+  }
+
+  // Модифікатори блоку
+  &--horizontal {
+    flex-direction: row;
+    gap: 24px;
+
+    // Специфічні умови для горизонтальної картки
+    .blog-card__image {
+      width: 241px;
+      min-height: 186px;
+      flex-shrink: 0;
+
+      @media screen and (max-width: $bp-tablet) {
+       border-bottom: 1px solid var(--form-grey);
+    }
+    }
+
+    .blog-card__body {
+      padding-top: 0;
+    }
+
+    // Перша горизонтальна картка в списку
+    &:first-child {
+      border-bottom: 1px solid var(--form-grey);
+      padding-bottom: 30px;
+    }
+  }
+
+  &--large {
+    border-bottom: 1px solid var(--form-grey);
+
+    .blog-card__image {
+      min-height: 209px;
+    }
+  }
+
+  // Елементи блоку
+  &__image {
+    position: relative;
+    background-color: var(--background-grey);
+    border-radius: 10px;
+    min-height: 209px;
+    background-image: url(../img/background.png);
+  }
+
+  &__tag {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background-color: var(--badge-orange);
+    color: var(--accent-orange);
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 16px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--text-gray);
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    margin-top: auto;
+    align-self: flex-end;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    &--highlight {
+      color: var(--accent-orange);
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,38 +1,92 @@
-.partner{
+// .partner{
+//   padding-bottom: 60px;
+
+//   &__title{
+//  font-size: 48px;
+//   font-weight: 600;
+//   margin-bottom: 15px;
+
+//      @media screen and (max-width: $bp-tablet) {
+//      font-size: 25px;
+//     }
+// }
+//   &__subtitle{
+//   font-size: 18px;
+//   line-height: 1.2;
+//   color: var(--text-gray);
+//   margin-bottom: 30px;
+
+//    @media screen and (max-width: $bp-tablet) {
+//      font-size: 16px;
+//     }
+
+// }
+//   &__img{
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+
+
+//   @media screen and (max-width: $bp-tablet) {
+//      display: flex;
+//      flex-direction: row;
+//     }
+// }
+
+
+// }
+
+.partner {
   padding-bottom: 60px;
 
-  &__title{
- font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 15px;
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
 
-     @media screen and (max-width: $bp-tablet) {
-     font-size: 25px;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 25px;
     }
-}
-  &__subtitle{
-  font-size: 18px;
-  line-height: 1.2;
-  color: var(--text-gray);
-  margin-bottom: 30px;
+  }
 
-   @media screen and (max-width: $bp-tablet) {
-     font-size: 16px;
+  &__subtitle {
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--text-gray);
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__img {
+    // Стилі для Swiper
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    
+    .swiper-wrapper {
+      display: flex;
+      align-items: center;
+      
+      // На десктопі вимикаємо поведінку слайдера, якщо слайдів мало
+      @media screen and (min-width: $bp-tablet) {
+        justify-content: space-around;
+      }
     }
 
-}
-  &__img{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
 
-
-  @media screen and (max-width: $bp-tablet) {
-     display: flex;
-     flex-direction: row;
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
+  }
 }
-
-
-}
-

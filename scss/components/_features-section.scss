@@ -1,0 +1,120 @@
+.features {
+  // Залишаю назву як у вас (через одне підкреслення)
+  &_header {
+    max-width: 512px;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: $bp-tablet) {
+    font-size: 25px;
+    }
+  }
+
+  &__subtitle {
+    color: var(--text-gray);
+    @media screen and (max-width: $bp-tablet) {
+    font-size: 16px;
+    margin-bottom: 30px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+ 
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: row;   
+      align-items: center;    
+      padding: 20px 0;       
+      gap: 15px;
+    }
+
+    // Нижня лінія для перших трьох елементів
+    &:nth-child(-n+3)::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: var(--form-grey);
+
+      @media screen and (max-width: $bp-tablet) { display: none; }
+    }
+
+    // Права лінія (крім кожного третього в ряду)
+    &:not(:nth-child(3n))::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: var(--form-grey);
+
+      @media screen and (max-width: $bp-tablet) { display: none;  }
+    }
+
+   
+
+    // Коригування висоти ліній
+    &:nth-child(-n+3)::before {
+      bottom: 30px;
+
+      @media screen and (max-width: $bp-tablet) { display: none;  }
+    }
+
+    &:nth-last-child(-n+3)::before {
+      top: 30px;
+
+      @media screen and (max-width: $bp-tablet) { display: none;  }
+    }
+
+    // Падінги для сітки
+    &:nth-child(3n+1) { padding-left: 0; }
+    &:nth-child(3n) { padding-right: 0; }
+    &:nth-child(-n+3) { padding-top: 0; }
+    &:nth-last-child(-n+3) { padding-bottom: 0; }
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--badge-orange);
+    border-radius: 50%;
+
+    @media screen and (max-width: $bp-tablet) {
+       background-color: inherit;
+    }
+  }
+
+  &__text {
+    color: var(--text-gray);
+
+    @media screen and (max-width: $bp-tablet) {
+       font-size: 14px;
+       letter-spacing: 0%;
+    }
+  }
+}

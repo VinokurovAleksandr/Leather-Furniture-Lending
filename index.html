@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./scss/main.min.css" />
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <title>Leather Furniture</title>
   </head>
   <body>
@@ -188,18 +192,21 @@
       </section>
 
       <section class="partner section">
-        <div class="partner__container">
-          <h2 class="partner__title">Trusted Partner to Premier Brands</h2>
-          <h3 class="partner__subtitle">Body text goes here</h3>
-          <div class="partner__img">
-              <img src="./img/section-brands/chanel.svg" alt="" />
-            <img src="./img/section-brands/YSL.svg" alt="" />
-            <img src="./img/section-brands/gucci.svg" alt="" />
-            <img src="./img/section-brands/hermes.svg" alt="" />
-            <img src="./img/section-brands/Lv.svg" alt="" />
-          </div>
-        </div>
-      </section>
+  <div class="partner__container container">
+    <h2 class="partner__title">Trusted Partner to Premier Brands</h2>
+    <h3 class="partner__subtitle">Body text goes here</h3>
+    
+    <div class="partner__img swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/section-brands/chanel.svg" alt="Chanel" /></div>
+        <div class="swiper-slide"><img src="./img/section-brands/YSL.svg" alt="YSL" /></div>
+        <div class="swiper-slide"><img src="./img/section-brands/gucci.svg" alt="Gucci" /></div>
+        <div class="swiper-slide"><img src="./img/section-brands/hermes.svg" alt="Hermes" /></div>
+        <div class="swiper-slide"><img src="./img/section-brands/Lv.svg" alt="LV" /></div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- craft section -->
       <section class="craft section">
@@ -805,63 +812,48 @@
         </div>
       </section>
 
-      <section class="featured section">
-        <div class="featured__container">
-          <h2 class="featured__title">Featured In</h2>
+<section class="featured section">
+  <div class="featured__container container">
+    <h2 class="featured__title">Featured In</h2>
 
-          <div class="featured__track">
-            <div class="featured__item">
-              <img
-                src="./img/featured/business-insider.png"
-                alt="Business Insider"
-                class="featured__logo"
-              />
-            </div>
-            <div class="featured__item">
-              <img
-                src="./img/featured/cnbc.png"
-                alt="CNBC"
-                class="featured__logo"
-              />
-            </div>
-            <div class="featured__item">
-              <img
-                src="./img/featured/time.png"
-                alt="TIME"
-                class="featured__logo"
-              />
-            </div>
-            <div class="featured__item">
-              <img
-                src="/img/featured/angies-list.png"
-                alt="Angie's list"
-                class="featured__logo"
-              />
-            </div>
-            <div class="featured__item">
-              <img
-                src="./img/featured/wsj.png"
-                alt="WSJ"
-                class="featured__logo"
-              />
-            </div>
-            <div class="featured__item">
-              <img
-                src="./img/featured/forbes.png"
-                alt="Forbes"
-                class="featured__logo"
-              />
-            </div>
-          </div>
+    <div class="featured__slider swiper">
+      <div class="featured__track swiper-wrapper">
+        
+        <div class="featured__item swiper-slide">
+          <img src="./img/featured/business-insider.png" alt="Business Insider" class="featured__logo" />
         </div>
-      </section>
+        
+        <div class="featured__item swiper-slide">
+          <img src="./img/featured/cnbc.png" alt="CNBC" class="featured__logo" />
+        </div>
+        
+        <div class="featured__item swiper-slide">
+          <img src="./img/featured/time.png" alt="TIME" class="featured__logo" />
+        </div>
+        
+        <div class="featured__item swiper-slide">
+          <img src="/img/featured/angies-list.png" alt="Angie's list" class="featured__logo" />
+        </div>
+        
+        <div class="featured__item swiper-slide">
+          <img src="./img/featured/wsj.png" alt="WSJ" class="featured__logo" />
+        </div>
+        
+        <div class="featured__item swiper-slide">
+          <img src="./img/featured/forbes.png" alt="Forbes" class="featured__logo" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
       <section class="about section">
         <div class="about__container">
           <div class="about__header">
             <h2 class="about__title">About Us</h2>
             <div class="about__rating">
-              <span class="about__starts">★★★★★</span>
+              <span class="about__stars">★★★★★</span>
               <span class="about__score">4.8 (894 Ratings)</span>
             </div>
             <p class="about__subtitle">
@@ -941,7 +933,7 @@
 
       <section class="features section">
         <div class="features__container">
-          <div class="features_header">
+          <div class="features__header">
             <h2 class="features__title">Why Choose Us</h2>
             <p class="features__subtitle">
               Copy line if needed. Excepteur sint occaecat cupidatat non
@@ -1039,7 +1031,7 @@
             />
 
             <button class="check__form-btn" type="button">
-              CHECK YOUR AREA
+              CHECK AREA
             </button>
           </form>
         </div>
@@ -1335,6 +1327,12 @@
 
     <script src="./input-btn.js"></script>
     <script src="./burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./swiper.js"></script>
+    <script src="./featured-swiper.js"></script>
+ 
+
 
     <script src="./servises_carusel.js"></script>
   </body>
