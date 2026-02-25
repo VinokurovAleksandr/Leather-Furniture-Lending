@@ -28,7 +28,8 @@
     margin-bottom: 60px;
      @media screen and (max-width: $bp-tablet) {
         display: flex;
-    flex-direction: column;
+         flex-direction: column;
+         gap: 30px;
     }
 
   }

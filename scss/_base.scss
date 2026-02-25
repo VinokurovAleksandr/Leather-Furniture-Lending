@@ -48,3 +48,22 @@ h6 {
   font-size: inherit;
   margin: 0;
 }
+
+
+// 
+
+@media (max-width: 1024px) {
+
+  .craft__grid,
+  .works__content,
+  .service__main,
+  .blog__content,
+  .about__accordions-wrapper,
+  .footer__content {
+    flex-direction: column;
+  }
+
+}
+// * {
+//   outline: 1px solid red;
+// }
