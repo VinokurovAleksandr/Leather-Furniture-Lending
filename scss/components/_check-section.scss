@@ -1,14 +1,14 @@
 .check {
-  &__container {
+  &__wrapper {
     border: 1px solid var(--form-grey);
     border-radius: 10px;
     background: var(--background-grey);
+    padding: 20px;
   }
 
   &__header {
-    margin-bottom: 30px;
 
-    padding-top: 20px;
+    margin-bottom: 20px;
   }
 
   &__title {

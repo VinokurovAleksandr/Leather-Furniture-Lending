@@ -46,7 +46,8 @@ const AUTOPLAY_DELAY = 5000;
 // --- ФУНКЦІЇ ЛОГІКИ ---
 
 function getActiveIndex() {
-  return window.innerWidth <= 768 ? 0 : 3;
+  if (window.innerWidth <= 768) return 0;
+  return Math.min(3, services.length - 1);
 }
 
 function updateText(data) {
@@ -146,8 +147,12 @@ prevBtn.onclick = () => {
 };
 
 
-window.addEventListener('resize', render);
+let resizeTimeout;
 
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(render, 200);
+});
 
 render();
 startAutoplay();
